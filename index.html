@@ -292,10 +292,19 @@
             color: #6D7485;
         }
         .restaurant.de-emphasized .restaurant-desc,
-        .restaurant.de-emphasized .chips,
         .restaurant.de-emphasized .michelin,
         .restaurant.de-emphasized .gallery-label {
             display: none;
+        }
+        .restaurant.de-emphasized .chips {
+            display: flex;
+        }
+        .restaurant.de-emphasized .chips .chip:not(.availability) {
+            display: none;
+        }
+        .restaurant.de-emphasized .chips .chip.availability {
+            font-size: 9px;
+            padding: 2px 8px;
         }
         .restaurant.de-emphasized .restaurant-right {
             display: flex;
