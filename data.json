@@ -348,10 +348,9 @@
           "mapUrl": "https://maps.google.com/?q=Nari+Restaurant+1625+Post+St+San+Francisco",
           "image": { "src": "images/nari.jpg", "alt": "Nari" },
           "description": "Chef Pim's refined Thai cuisine. 1625 Post St, Japantown.",
-          "chips": [{ "label": "Thai-Californian" }, { "label": "$$$$" }, { "label": "Available: Sun" }],
+          "chips": [{ "label": "Thai-Californian" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
           "ratings": [{ "source": "Google", "value": "4.3" }],
           "michelin": { "label": "Michelin Guide" },
-          "closedMonday": true,
           "booking": { "url": "https://resy.com/cities/san-francisco-ca/venues/nari?date=2026-01-19&seats=2", "label": "Book" }
         },
         {
