@@ -1,92 +1,92 @@
-# SF Fine Dining - Google Maps Gallery Links
-# Click these links to view photos on Google Maps
+# SF Fine Dining - Google Maps Photo Gallery Links
+# Click the link, then select "Photos" tab to view the gallery
 
 1. Gary Danko
-   https://www.google.com/maps/search/Gary+Danko+San+Francisco
+   https://maps.google.com/?q=Gary+Danko+800+North+Point+St+San+Francisco
 
 2. Niku Steakhouse
-   https://www.google.com/maps/search/Niku+Steakhouse+San+Francisco
+   https://maps.google.com/?q=Niku+Steakhouse+61+Division+St+San+Francisco
 
 3. Nari
-   https://www.google.com/maps/search/Nari+Restaurant+San+Francisco+Japantown
+   https://maps.google.com/?q=Nari+Restaurant+1625+Post+St+San+Francisco
 
 4. Kin Khao
-   https://www.google.com/maps/search/Kin+Khao+San+Francisco
+   https://maps.google.com/?q=Kin+Khao+55+Cyril+Magnin+St+San+Francisco
 
 5. State Bird Provisions
-   https://www.google.com/maps/search/State+Bird+Provisions+San+Francisco
+   https://maps.google.com/?q=State+Bird+Provisions+1529+Fillmore+St+San+Francisco
 
 6. The Progress
-   https://www.google.com/maps/search/The+Progress+Restaurant+San+Francisco
+   https://maps.google.com/?q=The+Progress+1525+Fillmore+St+San+Francisco
 
 7. 7 Adams
-   https://www.google.com/maps/search/7+Adams+Restaurant+San+Francisco
+   https://maps.google.com/?q=7+Adams+Restaurant+1963+Sutter+St+San+Francisco
 
 8. Hilda and Jesse
-   https://www.google.com/maps/search/Hilda+and+Jesse+San+Francisco
+   https://maps.google.com/?q=Hilda+and+Jesse+701+Union+St+San+Francisco
 
 9. San Ho Won
-   https://www.google.com/maps/search/San+Ho+Won+San+Francisco
+   https://maps.google.com/?q=San+Ho+Won+2170+Bryant+St+San+Francisco
 
 10. Angler SF
-    https://www.google.com/maps/search/Angler+San+Francisco+Embarcadero
+    https://maps.google.com/?q=Angler+SF+132+The+Embarcadero+San+Francisco
 
 11. China Live
-    https://www.google.com/maps/search/China+Live+San+Francisco
+    https://maps.google.com/?q=China+Live+644+Broadway+San+Francisco
 
 12. Dumpling Home
-    https://www.google.com/maps/search/Dumpling+Home+San+Francisco+Hayes+Valley
+    https://maps.google.com/?q=Dumpling+Home+379+Hayes+St+San+Francisco
 
 13. Z&Y Peking Duck
-    https://www.google.com/maps/search/Z+Y+Peking+Duck+San+Francisco
+    https://maps.google.com/?q=Z+Y+Peking+Duck+Chinatown+San+Francisco
 
 14. Spruce
-    https://www.google.com/maps/search/Spruce+Restaurant+San+Francisco
+    https://maps.google.com/?q=Spruce+Restaurant+3640+Sacramento+St+San+Francisco
 
 15. Kokkari Estiatorio
-    https://www.google.com/maps/search/Kokkari+Estiatorio+San+Francisco
+    https://maps.google.com/?q=Kokkari+Estiatorio+200+Jackson+St+San+Francisco
 
 16. Flour + Water
-    https://www.google.com/maps/search/Flour+Water+San+Francisco
+    https://maps.google.com/?q=Flour+Water+2401+Harrison+St+San+Francisco
 
 17. Nopa
-    https://www.google.com/maps/search/Nopa+Restaurant+San+Francisco
+    https://maps.google.com/?q=Nopa+560+Divisadero+St+San+Francisco
 
 18. Mijoté
-    https://www.google.com/maps/search/Mijote+San+Francisco
+    https://maps.google.com/?q=Mijote+2400+Harrison+St+San+Francisco
 
 19. A Mano
-    https://www.google.com/maps/search/A+Mano+San+Francisco+Hayes+Valley
+    https://maps.google.com/?q=A+Mano+450+Hayes+St+San+Francisco
 
 20. Chīsai Sushi Club
-    https://www.google.com/maps/search/Chisai+Sushi+Club+San+Francisco
+    https://maps.google.com/?q=Chisai+Sushi+Club+3369+Mission+St+San+Francisco
 
 21. Otra
-    https://www.google.com/maps/search/Otra+Restaurant+San+Francisco
+    https://maps.google.com/?q=Otra+682+Haight+St+San+Francisco
 
 22. Popi's Oysterette
-    https://www.google.com/maps/search/Popis+Oysterette+San+Francisco
+    https://maps.google.com/?q=Popis+Oysterette+2095+Chestnut+St+San+Francisco
 
 23. Brothers Korean BBQ
-    https://www.google.com/maps/search/Brothers+Korean+BBQ+San+Francisco
+    https://maps.google.com/?q=Brothers+Korean+BBQ+Richmond+District+San+Francisco
 
 24. Beit Rima
-    https://www.google.com/maps/search/Beit+Rima+San+Francisco
+    https://maps.google.com/?q=Beit+Rima+86+Carl+St+San+Francisco
 
 25. Pearl 6101
-    https://www.google.com/maps/search/Pearl+6101+San+Francisco
+    https://maps.google.com/?q=Pearl+6101+6101+California+St+San+Francisco
 
 26. Wayfare Tavern
-    https://www.google.com/maps/search/Wayfare+Tavern+San+Francisco
+    https://maps.google.com/?q=Wayfare+Tavern+558+Sacramento+St+San+Francisco
 
 27. Foreign Cinema
-    https://www.google.com/maps/search/Foreign+Cinema+San+Francisco
+    https://maps.google.com/?q=Foreign+Cinema+2534+Mission+St+San+Francisco
 
 28. The Morris
-    https://www.google.com/maps/search/The+Morris+San+Francisco
+    https://maps.google.com/?q=The+Morris+2501+Mariposa+St+San+Francisco
 
 29. Delfina
-    https://www.google.com/maps/search/Delfina+Restaurant+San+Francisco
+    https://maps.google.com/?q=Delfina+Restaurant+3621+18th+St+San+Francisco
 
 30. House of Tadu Ethiopian Kitchen
-    https://www.google.com/maps/search/House+of+Tadu+Ethiopian+Kitchen+San+Francisco
+    https://maps.google.com/?q=House+of+Tadu+Ethiopian+Kitchen+1130+4th+St+San+Francisco
