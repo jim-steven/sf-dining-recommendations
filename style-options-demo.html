@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Options Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #FFFFFF;
+            color: #151823;
+            font-family: 'Work Sans', system-ui, sans-serif;
+            padding: 40px;
+            font-size: 15px;
+            line-height: 1.65;
+        }
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            color: #7A3754;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #7A3754;
+        }
+        .demo-section {
+            max-width: 700px;
+            margin-bottom: 60px;
+            padding: 24px;
+            background: #FAFBFC;
+            border-radius: 12px;
+        }
+        .restaurant {
+            padding: 18px 0;
+            border-bottom: 1px solid #E2E5EE;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: start;
+        }
+        .restaurant:last-child { border-bottom: none; }
+        .restaurant-main {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 14px;
+            align-items: start;
+        }
+        .restaurant-img {
+            width: 90px;
+            height: 60px;
+            border-radius: 4px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #E8DFD5 0%, #D4C8BB 100%);
+        }
+        .restaurant-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        .restaurant-desc {
+            font-size: 13px;
+            color: #6D7485;
+            margin-bottom: 8px;
+        }
+        .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+        .chip {
+            border-radius: 999px;
+            border: 1px solid #E2E5EE;
+            padding: 3px 10px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: #fff;
+        }
+        .restaurant-right { text-align: right; min-width: 80px; }
+        .michelin { font-size: 11px; color: #7A3754; margin-bottom: 8px; }
+        .book-link {
+            color: #111827;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            border-bottom: 1px solid #111827;
+        }
+
+        /* ========== OPTION 1: Opacity Fade ========== */
+        .option1 .de-emphasized {
+            opacity: 0.35;
+            transition: opacity 0.2s ease;
+        }
+        .option1 .de-emphasized:hover {
+            opacity: 0.7;
+        }
+
+        /* ========== OPTION 2: Grayscale + Muted ========== */
+        .option2 .de-emphasized .restaurant-img {
+            filter: grayscale(100%);
+        }
+        .option2 .de-emphasized .restaurant-title {
+            color: #9CA3AF;
+        }
+        .option2 .de-emphasized .restaurant-desc {
+            color: #C5CAD4;
+        }
+        .option2 .de-emphasized .chip {
+            border-color: #E8EBF0;
+            color: #B0B5C0;
+        }
+        .option2 .de-emphasized .michelin {
+            color: #C5CAD4;
+        }
+        .option2 .de-emphasized .book-link {
+            color: #B0B5C0;
+            border-color: #B0B5C0;
+        }
+
+        /* ========== OPTION 3: Collapsed Cards ========== */
+        .option3 .de-emphasized {
+            padding: 10px 0;
+        }
+        .option3 .de-emphasized .restaurant-main {
+            grid-template-columns: 50px 1fr;
+            gap: 10px;
+        }
+        .option3 .de-emphasized .restaurant-img {
+            width: 50px;
+            height: 35px;
+            filter: grayscale(60%);
+        }
+        .option3 .de-emphasized .restaurant-title {
+            font-size: 14px;
+            margin-bottom: 0;
+            color: #6D7485;
+        }
+        .option3 .de-emphasized .restaurant-desc,
+        .option3 .de-emphasized .chips,
+        .option3 .de-emphasized .michelin {
+            display: none;
+        }
+        .option3 .de-emphasized .restaurant-right {
+            display: flex;
+            align-items: center;
+        }
+        .option3 .de-emphasized .book-link {
+            font-size: 10px;
+            color: #9CA3AF;
+            border-color: #9CA3AF;
+        }
+
+        /* ========== OPTION 4: Featured Badge ========== */
+        .option4 .featured {
+            background: linear-gradient(90deg, rgba(122,55,84,0.04) 0%, transparent 100%);
+            border-left: 3px solid #7A3754;
+            padding-left: 16px;
+            margin-left: -16px;
+        }
+        .option4 .featured .restaurant-title::after {
+            content: '★ Featured';
+            font-family: 'Work Sans', sans-serif;
+            font-size: 9px;
+            font-weight: 500;
+            color: #fff;
+            background: #7A3754;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-left: 10px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .option4 .de-emphasized {
+            opacity: 0.6;
+        }
+
+        .label-featured {
+            display: inline-block;
+            font-size: 10px;
+            color: #22C55E;
+            background: #ECFDF5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+        .label-deemph {
+            display: inline-block;
+            font-size: 10px;
+            color: #9CA3AF;
+            background: #F3F4F6;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visual De-emphasis Options</h1>
+    <p style="color: #6D7485; margin-bottom: 40px;">Comparing 4 ways to highlight Korean, Japanese, Chinese cuisine while de-emphasizing others.</p>
+
+    <!-- OPTION 1 -->
+    <h2>Option 1: Opacity Fade</h2>
+    <div class="demo-section option1">
+        <article class="restaurant">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">San Ho Won <span class="label-featured">Featured</span></h3>
+                    <p class="restaurant-desc">Charcoal BBQ with premium Korean cuts. 2170 Bryant St, Mission.</p>
+                    <div class="chips"><span class="chip">Korean BBQ</span><span class="chip">$$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">⭐ Michelin Star</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+        <article class="restaurant de-emphasized">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Kokkari Estiatorio <span class="label-deemph">Other</span></h3>
+                    <p class="restaurant-desc">Corporate card worthy, classic Greek establishment. 200 Jackson St.</p>
+                    <div class="chips"><span class="chip">Greek</span><span class="chip">$$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">Highly Acclaimed</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+    </div>
+
+    <!-- OPTION 2 -->
+    <h2>Option 2: Grayscale + Muted Text</h2>
+    <div class="demo-section option2">
+        <article class="restaurant">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Omakase <span class="label-featured">Featured</span></h3>
+                    <p class="restaurant-desc">Intimate 12-seat Edomae-style omakase. 665 Townsend St, SOMA.</p>
+                    <div class="chips"><span class="chip">Omakase / Sushi</span><span class="chip">$$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">⭐ Michelin Star</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+        <article class="restaurant de-emphasized">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Flour + Water <span class="label-deemph">Other</span></h3>
+                    <p class="restaurant-desc">Date night favorite, handmade pasta. 2401 Harrison St, Mission.</p>
+                    <div class="chips"><span class="chip">Italian / Pasta</span><span class="chip">$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">Highly Acclaimed</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+    </div>
+
+    <!-- OPTION 3 -->
+    <h2>Option 3: Collapsed Cards</h2>
+    <div class="demo-section option3">
+        <article class="restaurant">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">China Live <span class="label-featured">Featured</span></h3>
+                    <p class="restaurant-desc">Massive emporium with multiple dining options. 644 Broadway, Chinatown.</p>
+                    <div class="chips"><span class="chip">Chinese</span><span class="chip">$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">Acclaimed Venue</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+        <article class="restaurant de-emphasized">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Nopa</h3>
+                    <p class="restaurant-desc">Great bar scene, phenomenal pork chop. 560 Divisadero St.</p>
+                    <div class="chips"><span class="chip">American</span><span class="chip">$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">Highly Acclaimed</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+        <article class="restaurant de-emphasized">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Foreign Cinema</h3>
+                    <p class="restaurant-desc">Movies projected on courtyard wall. 2534 Mission St.</p>
+                    <div class="chips"><span class="chip">California-Mediterranean</span><span class="chip">$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">SF Icon</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+    </div>
+
+    <!-- OPTION 4 -->
+    <h2>Option 4: Featured Badge + Subtle Fade</h2>
+    <div class="demo-section option4">
+        <article class="restaurant featured">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Niku Steakhouse</h3>
+                    <p class="restaurant-desc">A5 Japanese Wagyu, dry-aged beef. 61 Division St, Design District.</p>
+                    <div class="chips"><span class="chip">Steakhouse / Wagyu</span><span class="chip">$$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">⭐ Michelin Star</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+        <article class="restaurant de-emphasized">
+            <div class="restaurant-main">
+                <div class="restaurant-img"></div>
+                <div>
+                    <h3 class="restaurant-title">Gary Danko</h3>
+                    <p class="restaurant-desc">Legendary SF institution. Dress code enforced. 800 North Point St.</p>
+                    <div class="chips"><span class="chip">New American</span><span class="chip">$$$$</span></div>
+                </div>
+            </div>
+            <div class="restaurant-right">
+                <div class="michelin">⭐ Michelin Star</div>
+                <a href="#" class="book-link">Book</a>
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>

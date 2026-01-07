@@ -153,6 +153,11 @@
             color: #151823;
             background: #FFFFFF;
         }
+        .chip.availability {
+            background: #E8F5E9;
+            border-color: #4CAF50;
+            color: #2E7D32;
+        }
         .restaurant-right {
             text-align: right;
             min-width: 100px;
@@ -604,7 +609,7 @@
                 chipsContainer.innerHTML = '';
                 rest.chips.forEach(chip => {
                     const span = document.createElement('span');
-                    span.className = 'chip';
+                    span.className = chip.label.startsWith('Available') ? 'chip availability' : 'chip';
                     span.textContent = chip.label;
                     chipsContainer.appendChild(span);
                 });
