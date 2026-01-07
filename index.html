@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Fine Dining - Monday, January 19, 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #FFFFFF;
+            color: #151823;
+            font-family: 'Work Sans', system-ui, sans-serif;
+            min-height: 100vh;
+            font-size: 15px;
+            line-height: 1.65;
+        }
+        .layout {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 24px 100px;
+            display: grid;
+            grid-template-columns: 0.32fr 0.68fr;
+            column-gap: 60px;
+        }
+        @media (max-width: 900px) {
+            .layout { grid-template-columns: 1fr; }
+            .sidebar { position: static !important; margin-bottom: 50px; }
+        }
+        .sidebar {
+            position: sticky;
+            top: 60px;
+            align-self: start;
+        }
+        .sidebar-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+        .sidebar-date {
+            font-size: 13px;
+            color: #7A3754;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+        .sidebar-desc {
+            font-size: 15px;
+            color: #6D7485;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .sidebar-note {
+            font-size: 13px;
+            color: #6D7485;
+            padding: 16px;
+            background: #F3F5F9;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .sidebar-note strong {
+            color: #151823;
+        }
+        .section-label {
+            font-size: 11px;
+            color: #6D7485;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #E2E5EE;
+        }
+        .restaurant {
+            padding: 22px 0;
+            border-bottom: 1px solid #E2E5EE;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px;
+            align-items: start;
+        }
+        .restaurant:first-of-type {
+            border-top: none;
+        }
+        .restaurant-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 20px;
+            letter-spacing: 0.01em;
+            margin-bottom: 4px;
+        }
+        .restaurant-desc {
+            font-size: 14px;
+            color: #6D7485;
+            line-height: 1.55;
+            margin-bottom: 12px;
+        }
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .chip {
+            border-radius: 999px;
+            border: 1px solid #E2E5EE;
+            padding: 4px 12px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #151823;
+            background: #FFFFFF;
+        }
+        .restaurant-right {
+            text-align: right;
+            min-width: 100px;
+        }
+        .ratings {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2px;
+            margin-bottom: 6px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+            font-weight: 500;
+            font-size: 12px;
+            color: #111827;
+        }
+        .rating-label {
+            color: #6D7485;
+            font-weight: 400;
+            font-size: 11px;
+        }
+        .michelin {
+            font-size: 12px;
+            color: #7A3754;
+            margin-bottom: 12px;
+        }
+        .top-pick {
+            color: #D4AF37;
+            font-size: 10px;
+            margin-left: 4px;
+        }
+        .recommended-badge {
+            display: inline-block;
+            background: #7A3754;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-left: 12px;
+            vertical-align: middle;
+        }
+        .book-link {
+            color: #111827;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            border-bottom: 1px solid #111827;
+            padding-bottom: 2px;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        .book-link:hover {
+            color: #7A3754;
+            border-color: #7A3754;
+        }
+        .section-divider {
+            padding: 40px 0 20px;
+            font-size: 12px;
+            color: #6D7485;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-weight: 500;
+        }
+        @media (max-width: 600px) {
+            .restaurant {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            .restaurant-right {
+                text-align: left;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 16px;
+            }
+            .ratings { 
+                flex-direction: row; 
+                gap: 12px;
+            }
+            .michelin { margin-bottom: 0; }
+        }
+        .filters {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .filter-group label {
+            display: block;
+            font-size: 11px;
+            color: #6D7485;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 6px;
+        }
+        .filter-group select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #E2E5EE;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            background: #fff;
+            color: #151823;
+        }
+        .filter-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .reset-btn {
+            padding: 8px 16px;
+            border: 1px solid #E2E5EE;
+            border-radius: 6px;
+            background: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .reset-btn:hover {
+            background: #F3F5F9;
+        }
+        .result-count {
+            font-size: 13px;
+            color: #6D7485;
+            margin-top: 12px;
+        }
+        .restaurant.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h1 class="sidebar-title">Restaurant Recommendations</h1>
+            <p class="sidebar-date">Monday, January 19, 2026</p>
+            <p class="sidebar-desc">30 great spots in SF that are actually open on Monday.</p>
+            <div class="sidebar-note">
+                <strong>Note:</strong> Many top tasting-menu restaurants (Quince, Benu, Atelier Crenn, Saison) are closed Mondays. This list features only verified Monday options.
+            </div>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="cuisine-filter">Cuisine</label>
+                    <select id="cuisine-filter">
+                        <option value="">All Cuisines</option>
+                        <option value="american">American</option>
+                        <option value="californian">Californian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="ethiopian">Ethiopian</option>
+                        <option value="french">French</option>
+                        <option value="greek">Greek</option>
+                        <option value="italian">Italian</option>
+                        <option value="korean">Korean</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="palestinian">Palestinian</option>
+                        <option value="seafood">Seafood</option>
+                        <option value="steakhouse">Steakhouse</option>
+                        <option value="sushi">Sushi / Omakase</option>
+                        <option value="thai">Thai</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="acclamation-filter">Acclamation</label>
+                    <select id="acclamation-filter">
+                        <option value="">All</option>
+                        <option value="michelin-star">Michelin Star</option>
+                        <option value="michelin-recommended">Michelin Recommended</option>
+                        <option value="highly-acclaimed">Highly Acclaimed</option>
+                        <option value="james-beard">James Beard</option>
+                        <option value="notable">Notable</option>
+                    </select>
+                </div>
+                <div class="filter-actions">
+                    <button class="reset-btn" onclick="resetFilters()">Reset</button>
+                </div>
+                <div class="result-count" id="result-count">Showing 30 restaurants</div>
+            </div>
+        </aside>
+        
+        <main class="list">
+            <div class="section-label">Michelin-Starred Restaurants</div>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Gary Danko <span class="recommended-badge">Recommended</span></h2>
+                    <p class="restaurant-desc">Legendary SF institution. Dress code enforced. 800 North Point St, Fisherman's Wharf.</p>
+                    <div class="chips">
+                        <span class="chip">New American</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.6</div>
+                        <div class="rating"><span class="rating-label">TripAdvisor</span> 4.6</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.opentable.com/r/gary-danko-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Niku Steakhouse <span class="recommended-badge">Recommended</span></h2>
+                    <p class="restaurant-desc">A5 Japanese Wagyu, dry-aged beef, and wood-fired cooking. 61 Division St, Design District.</p>
+                    <div class="chips">
+                        <span class="chip">Steakhouse / Wagyu</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.5</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.opentable.com/r/niku-steakhouse-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Nari</h2>
+                    <p class="restaurant-desc">Chef Pim Techamuanvivit's refined Thai cuisine with California influences. 1625 Post St, Japantown.</p>
+                    <div class="chips">
+                        <span class="chip">Thai-Californian</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.3</div>
+                        <div class="rating"><span class="rating-label">Yelp</span> 4.0</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.exploretock.com/nari" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Kin Khao</h2>
+                    <p class="restaurant-desc">Bold, authentic Thai flavors in an upscale setting. 55 Cyril Magnin St, Union Square.</p>
+                    <div class="chips">
+                        <span class="chip">Thai</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.2</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.opentable.com/r/kin-khao-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">State Bird Provisions</h2>
+                    <p class="restaurant-desc">Dim sum-style service of creative American small plates. 1529 Fillmore St, Western Addition.</p>
+                    <div class="chips">
+                        <span class="chip">American Creative</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.5</div>
+                        <div class="rating"><span class="rating-label">Yelp</span> 4.6 <span class="top-pick">★ Top</span></div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.exploretock.com/statebird" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">The Progress</h2>
+                    <p class="restaurant-desc">Family-style Californian from the State Bird team. 1525 Fillmore St, Western Addition.</p>
+                    <div class="chips">
+                        <span class="chip">Californian</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.6</div>
+                        <div class="rating"><span class="rating-label">Yelp</span> 4.5</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.exploretock.com/theprogress" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">7 Adams</h2>
+                    <p class="restaurant-desc">Refined Californian cuisine celebrating local ingredients. 1963 Sutter St, Japantown.</p>
+                    <div class="chips">
+                        <span class="chip">Californian</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.4</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.exploretock.com/7adams" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Hilda and Jesse</h2>
+                    <p class="restaurant-desc">Queer-owned, inventive contemporary American cuisine. 701 Union St, North Beach.</p>
+                    <div class="chips">
+                        <span class="chip">Contemporary American</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 3.9</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.opentable.com/r/hilda-and-jesse-san-francisco?dateTime=2026-01-19T19:00&covers=2" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">San Ho Won</h2>
+                    <p class="restaurant-desc">Charcoal BBQ with premium Korean cuts. Reservations required. 2170 Bryant St, Mission.</p>
+                    <div class="chips">
+                        <span class="chip">Korean BBQ</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.6</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.exploretock.com/sanhowon" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Angler SF</h2>
+                    <p class="restaurant-desc">Bay views, wood-fired seafood from Saison Hospitality. 132 The Embarcadero.</p>
+                    <div class="chips">
+                        <span class="chip">Seafood</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.5</div>
+                    </div>
+                    <div class="michelin">⭐ Michelin Star</div>
+                    <a href="https://www.sevenrooms.com/reservations/anglersf" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <div class="section-divider">Additional Acclaimed Restaurants</div>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">China Live</h2>
+                    <p class="restaurant-desc">Massive emporium with multiple dining options. 644 Broadway, Chinatown.</p>
+                    <div class="chips">
+                        <span class="chip">Chinese</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Acclaimed Venue</div>
+                    <a href="https://www.opentable.com/r/china-live-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Dumpling Home</h2>
+                    <p class="restaurant-desc">Best xiao long bao in the city. 379 Hayes St, Hayes Valley.</p>
+                    <div class="chips">
+                        <span class="chip">Chinese / Dumplings</span>
+                        <span class="chip">$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Infatuation</span> 8.8</div>
+                    </div>
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.opentable.com/r/dumpling-home-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Z&Y Peking Duck</h2>
+                    <p class="restaurant-desc">Reserve duck ahead for showstopper presentation. Chinatown.</p>
+                    <div class="chips">
+                        <span class="chip">Sichuan / Chinese</span>
+                        <span class="chip">$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Infatuation</span> 8.3</div>
+                    </div>
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.opentable.com/r/z-and-y-peking-duck-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Spruce</h2>
+                    <p class="restaurant-desc">Famous burgers at bar, elegant dining room. 3640 Sacramento St, Presidio Heights.</p>
+                    <div class="chips">
+                        <span class="chip">New Californian</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Michelin Recommended</div>
+                    <a href="https://www.opentable.com/r/spruce-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Kokkari Estiatorio</h2>
+                    <p class="restaurant-desc">Corporate card worthy, classic Greek establishment. 200 Jackson St, Financial District.</p>
+                    <div class="chips">
+                        <span class="chip">Greek</span>
+                        <span class="chip">$$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Google</span> 4.7 <span class="top-pick">★ Top</span></div>
+                        <div class="rating"><span class="rating-label">Infatuation</span> 8.3</div>
+                    </div>
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.opentable.com/r/kokkari-estiatorio-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Flour + Water</h2>
+                    <p class="restaurant-desc">Date night favorite, handmade pasta. 2401 Harrison St, Mission District.</p>
+                    <div class="chips">
+                        <span class="chip">Italian / Pasta</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.opentable.com/r/flour-water-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Nopa</h2>
+                    <p class="restaurant-desc">Great bar scene, phenomenal pork chop. 560 Divisadero St, NoPa.</p>
+                    <div class="chips">
+                        <span class="chip">American</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Infatuation</span> 8.3</div>
+                    </div>
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.opentable.com/r/nopa-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Mijoté</h2>
+                    <p class="restaurant-desc">$84 four-course dinner, natural wine focus. 2400 Harrison St, Mission.</p>
+                    <div class="chips">
+                        <span class="chip">French</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">James Beard Finalist</div>
+                    <a href="https://www.resy.com/cities/sf/mijote" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">A Mano</h2>
+                    <p class="restaurant-desc">Adriano Paganini restaurant, handmade pasta. 450 Hayes St, Hayes Valley.</p>
+                    <div class="chips">
+                        <span class="chip">Italian / Pasta</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.opentable.com/r/a-mano-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Chīsai Sushi Club</h2>
+                    <p class="restaurant-desc">$95 for 13-course omakase ($70 vegetarian). 3369 Mission St, Bernal Heights.</p>
+                    <div class="chips">
+                        <span class="chip">Omakase / Sushi</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Hidden Gem</div>
+                    <a href="https://www.resy.com/cities/sf/chisai-sushi-club" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Otra</h2>
+                    <p class="restaurant-desc">Vegetable-centric modern Mexican. 682 Haight St, Lower Haight.</p>
+                    <div class="chips">
+                        <span class="chip">Modern Mexican</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Notable</div>
+                    <a href="https://www.resy.com/cities/sf/otra" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Popi's Oysterette</h2>
+                    <p class="restaurant-desc">Great for happy hour. 2095 Chestnut St, Marina.</p>
+                    <div class="chips">
+                        <span class="chip">Seafood / Oysters</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Notable</div>
+                    <a href="https://www.resy.com/cities/sf/popis-oysterette" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Brothers Korean BBQ</h2>
+                    <p class="restaurant-desc">Charcoal grills, lively atmosphere. Richmond District.</p>
+                    <div class="chips">
+                        <span class="chip">Korean BBQ</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Infatuation</span> 8.1</div>
+                    </div>
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.yelp.com/biz/brothers-korean-bbq-san-francisco" class="book-link" target="_blank">Info</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Beit Rima</h2>
+                    <p class="restaurant-desc">Casual dinners with authentic Palestinian flavors. 86 Carl St, Cole Valley.</p>
+                    <div class="chips">
+                        <span class="chip">Palestinian</span>
+                        <span class="chip">$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Notable</div>
+                    <a href="https://www.resy.com/cities/sf/beit-rima" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Pearl 6101</h2>
+                    <p class="restaurant-desc">Romantic atmosphere, excellent wine list. 6101 California St, Richmond.</p>
+                    <div class="chips">
+                        <span class="chip">Wine Bar / American</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Infatuation</span> 8.5</div>
+                    </div>
+                    <div class="michelin">Highly Acclaimed</div>
+                    <a href="https://www.resy.com/cities/sf/pearl-6101" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Wayfare Tavern</h2>
+                    <p class="restaurant-desc">Classic SF tavern, turn of 20th century inspired. 558 Sacramento St, Financial District.</p>
+                    <div class="chips">
+                        <span class="chip">American Traditional</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Notable</div>
+                    <a href="https://www.opentable.com/r/wayfare-tavern-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Foreign Cinema</h2>
+                    <p class="restaurant-desc">Movies projected on courtyard wall. 2534 Mission St, Mission.</p>
+                    <div class="chips">
+                        <span class="chip">California-Mediterranean</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">SF Icon</div>
+                    <a href="https://www.opentable.com/r/foreign-cinema-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">The Morris</h2>
+                    <p class="restaurant-desc">Consistently good, great wine selection. 2501 Mariposa St, Mission.</p>
+                    <div class="chips">
+                        <span class="chip">American / Wine Bar</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">Notable</div>
+                    <a href="https://www.opentable.com/r/the-morris-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">Delfina</h2>
+                    <p class="restaurant-desc">Mission classic Italian. 3621 18th St, Mission.</p>
+                    <div class="chips">
+                        <span class="chip">Italian</span>
+                        <span class="chip">$$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="michelin">SF Classic</div>
+                    <a href="https://www.opentable.com/r/delfina-san-francisco" class="book-link" target="_blank">Book</a>
+                </div>
+            </article>
+
+            <article class="restaurant">
+                <div class="restaurant-main">
+                    <h2 class="restaurant-title">House of Tadu Ethiopian Kitchen</h2>
+                    <p class="restaurant-desc">Great for vegetarians. 1130 4th St, Mission Bay.</p>
+                    <div class="chips">
+                        <span class="chip">Ethiopian</span>
+                        <span class="chip">$$</span>
+                    </div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="ratings">
+                        <div class="rating"><span class="rating-label">Infatuation</span> 9.1</div>
+                    </div>
+                    <div class="michelin">Top Rated</div>
+                    <a href="https://www.yelp.com/biz/house-of-tadu-ethiopian-kitchen-san-francisco" class="book-link" target="_blank">Info</a>
+                </div>
+            </article>
+        </main>
+    </div>
+    <script>
+        const cuisineFilter = document.getElementById('cuisine-filter');
+        const acclamationFilter = document.getElementById('acclamation-filter');
+        const resultCount = document.getElementById('result-count');
+        const restaurants = document.querySelectorAll('.restaurant');
+
+        function applyFilters() {
+            const cuisine = cuisineFilter.value.toLowerCase();
+            const acclamation = acclamationFilter.value.toLowerCase();
+            let visible = 0;
+
+            restaurants.forEach(restaurant => {
+                const chips = restaurant.querySelector('.chips')?.textContent.toLowerCase() || '';
+                const michelin = restaurant.querySelector('.michelin')?.textContent.toLowerCase() || '';
+                
+                let showCuisine = !cuisine || chips.includes(cuisine);
+                let showAcclamation = !acclamation;
+                
+                if (acclamation === 'michelin-star') {
+                    showAcclamation = michelin.includes('michelin star');
+                } else if (acclamation === 'michelin-recommended') {
+                    showAcclamation = michelin.includes('michelin recommended');
+                } else if (acclamation === 'highly-acclaimed') {
+                    showAcclamation = michelin.includes('highly acclaimed');
+                } else if (acclamation === 'james-beard') {
+                    showAcclamation = michelin.includes('james beard');
+                } else if (acclamation === 'notable') {
+                    showAcclamation = michelin.includes('notable');
+                }
+
+                if (showCuisine && showAcclamation) {
+                    restaurant.classList.remove('hidden');
+                    visible++;
+                } else {
+                    restaurant.classList.add('hidden');
+                }
+            });
+
+            resultCount.textContent = `Showing ${visible} restaurant${visible !== 1 ? 's' : ''}`;
+        }
+
+        function resetFilters() {
+            cuisineFilter.value = '';
+            acclamationFilter.value = '';
+            applyFilters();
+        }
+
+        cuisineFilter.addEventListener('change', applyFilters);
+        acclamationFilter.addEventListener('change', applyFilters);
+    </script>
+</body>
+</html>
