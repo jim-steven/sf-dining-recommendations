@@ -586,6 +586,12 @@
         function populateRestaurant(article, rest) {
             if (!isFeaturedCuisine(rest) || rest.closedMonday) {
                 article.classList.add('de-emphasized');
+                article.style.cursor = 'pointer';
+                article.addEventListener('click', (e) => {
+                    if (e.target.tagName !== 'A') {
+                        article.classList.toggle('de-emphasized');
+                    }
+                });
             }
             
             const imgLink = article.querySelector('.restaurant-img-link');
