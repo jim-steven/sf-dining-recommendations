@@ -963,9 +963,6 @@
             },
             {
               "label": "$$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
             }
           ],
           "ratings": [
@@ -981,6 +978,7 @@
           "michelin": {
             "label": "Michelin Guide"
           },
+          "closedMonday": true,
           "booking": {
             "url": "https://www.exploretock.com/juni",
             "label": "Book"
