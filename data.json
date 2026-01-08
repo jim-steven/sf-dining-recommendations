@@ -8,31 +8,70 @@
   "sidebar": {
     "title": "Asian Restaurant Recommendations",
     "date": "Monday, January 19, 2026",
-    "description": "Curated Korean, Japanese, and Chinese dining in SF Bay Area.",
-    "noteHtml": "<strong>Note:</strong> Many top tasting-menu restaurants are closed Mondays. Restaurants marked as closed Monday appear collapsed. Look for <strong>Available: Sun</strong> or <strong>Available: Mon</strong> chips."
+    "description": "All Michelin-recognized Asian restaurants in SF Bay Area, with Korean, Japanese, and Chinese highlighted.",
+    "noteHtml": "<strong>How to use:</strong> Fully visible cards are our top picks for Monday\u2014Korean, Japanese, and Chinese restaurants open that day. Collapsed (grayed-out) cards are either closed Monday or other Asian cuisines. Click any collapsed card to expand it. Look for green <strong>Available: Mon</strong> chips."
   },
   "filters": {
     "cuisine": {
       "label": "Cuisine",
       "options": [
-        { "value": "", "label": "All Cuisines" },
-        { "value": "chinese", "label": "Chinese" },
-        { "value": "japanese", "label": "Japanese" },
-        { "value": "korean", "label": "Korean" },
-        { "value": "sushi", "label": "Sushi / Omakase" },
-        { "value": "asian", "label": "Asian Fusion" },
-        { "value": "thai", "label": "Thai" },
-        { "value": "burmese", "label": "Burmese" }
+        {
+          "value": "",
+          "label": "All Cuisines"
+        },
+        {
+          "value": "chinese",
+          "label": "Chinese"
+        },
+        {
+          "value": "japanese",
+          "label": "Japanese"
+        },
+        {
+          "value": "korean",
+          "label": "Korean"
+        },
+        {
+          "value": "sushi",
+          "label": "Sushi / Omakase"
+        },
+        {
+          "value": "asian",
+          "label": "Asian Fusion"
+        },
+        {
+          "value": "thai",
+          "label": "Thai"
+        },
+        {
+          "value": "burmese",
+          "label": "Burmese"
+        }
       ]
     },
     "acclamation": {
       "label": "Acclamation",
       "options": [
-        { "value": "", "label": "All" },
-        { "value": "michelin-star", "label": "Michelin Star" },
-        { "value": "bib-gourmand", "label": "Bib Gourmand" },
-        { "value": "michelin-recommended", "label": "Michelin Guide" },
-        { "value": "highly-acclaimed", "label": "Highly Acclaimed" }
+        {
+          "value": "",
+          "label": "All"
+        },
+        {
+          "value": "michelin-star",
+          "label": "Michelin Star"
+        },
+        {
+          "value": "bib-gourmand",
+          "label": "Bib Gourmand"
+        },
+        {
+          "value": "michelin-recommended",
+          "label": "Michelin Guide"
+        },
+        {
+          "value": "highly-acclaimed",
+          "label": "Highly Acclaimed"
+        }
       ]
     }
   },
@@ -47,90 +86,249 @@
           "name": "Benu",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
           "mapUrl": "https://maps.google.com/?q=Benu+22+Hawthorne+St+San+Francisco",
-          "image": { "src": "images/benu.jpg", "alt": "Benu" },
+          "image": {
+            "src": "images/benu.jpg",
+            "alt": "Benu"
+          },
           "description": "Three Michelin stars. Chef Corey Lee's exceptional Asian-Contemporary cuisine. 22 Hawthorne St, SOMA.",
-          "chips": [{ "label": "Asian / Contemporary" }, { "label": "$$$$" }],
-          "ratings": [],
-          "michelin": { "label": "⭐⭐⭐ Three Stars" },
+          "chips": [
+            {
+              "label": "Asian / Contemporary"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.3 (#12)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#13)"
+            }
+          ],
+          "michelin": {
+            "label": "\u2b50\u2b50\u2b50 Three Stars"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.exploretock.com/benu", "label": "Book" }
+          "booking": {
+            "url": "https://www.exploretock.com/benu",
+            "label": "Book"
+          }
         },
         {
           "id": "san-ho-won",
           "name": "San Ho Won",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won",
           "mapUrl": "https://maps.google.com/?q=San+Ho+Won+2170+Bryant+St+San+Francisco",
-          "image": { "src": "images/san-ho-won.jpg", "alt": "San Ho Won" },
+          "image": {
+            "src": "images/san-ho-won.jpg",
+            "alt": "San Ho Won"
+          },
           "description": "Charcoal BBQ with premium Korean cuts. Open Mon & Sun 5-9:30 PM. 2170 Bryant St, Mission.",
-          "chips": [{ "label": "Korean BBQ" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [{ "source": "Google", "value": "4.6" }],
-          "michelin": { "label": "⭐ Michelin Star" },
-          "booking": { "url": "https://www.exploretock.com/sanhowon", "label": "Book" }
+          "chips": [
+            {
+              "label": "Korean BBQ"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#2)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#7)"
+            }
+          ],
+          "michelin": {
+            "label": "\u2b50 Michelin Star"
+          },
+          "booking": {
+            "url": "https://www.exploretock.com/sanhowon",
+            "label": "Book"
+          }
         },
         {
           "id": "ssal",
           "name": "Ssal",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
           "mapUrl": "https://maps.google.com/?q=Ssal+2226+Polk+St+San+Francisco",
-          "image": { "src": "images/ssal.jpg", "alt": "Ssal" },
+          "image": {
+            "src": "images/ssal.jpg",
+            "alt": "Ssal"
+          },
           "description": "Korean fine dining tasting menu. 2226 Polk St, Russian Hill.",
-          "chips": [{ "label": "Korean" }, { "label": "$$$$" }, { "label": "Available: Sun" }],
-          "ratings": [],
-          "michelin": { "label": "⭐ Michelin Star" },
+          "chips": [
+            {
+              "label": "Korean"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#3)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#2)"
+            }
+          ],
+          "michelin": {
+            "label": "\u2b50 Michelin Star"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.opentable.com/r/ssal-san-francisco", "label": "Book" }
+          "booking": {
+            "url": "https://www.opentable.com/r/ssal-san-francisco",
+            "label": "Book"
+          }
         },
         {
           "id": "mister-jius",
           "name": "Mister Jiu's",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
           "mapUrl": "https://maps.google.com/?q=Mister+Jius+28+Waverly+Pl+San+Francisco",
-          "image": { "src": "images/mister-jius.jpg", "alt": "Mister Jiu's" },
+          "image": {
+            "src": "images/mister-jius.jpg",
+            "alt": "Mister Jiu's"
+          },
           "description": "Modern Chinese-American in historic Chinatown. 28 Waverly Pl.",
-          "chips": [{ "label": "Chinese" }, { "label": "$$$" }],
-          "ratings": [],
-          "michelin": { "label": "⭐ Michelin Star" },
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.7 (#24)"
+            },
+            {
+              "source": "Google",
+              "value": "4.3 (#23)"
+            }
+          ],
+          "michelin": {
+            "label": "\u2b50 Michelin Star"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.exploretock.com/misterjius", "label": "Book" }
+          "booking": {
+            "url": "https://www.exploretock.com/misterjius",
+            "label": "Book"
+          }
         },
         {
           "id": "nisei",
           "name": "Nisei",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
           "mapUrl": "https://maps.google.com/?q=Nisei+2316+Polk+St+San+Francisco",
-          "image": { "src": "images/nisei.jpg", "alt": "Nisei" },
+          "image": {
+            "src": "images/nisei.jpg",
+            "alt": "Nisei"
+          },
           "description": "Japanese-American heritage tasting menu. 2316 Polk St, Russian Hill.",
-          "chips": [{ "label": "Japanese" }, { "label": "$$$$" }, { "label": "Available: Sun" }],
-          "ratings": [],
-          "michelin": { "label": "⭐ Michelin Star" },
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#6)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#3)"
+            }
+          ],
+          "michelin": {
+            "label": "\u2b50 Michelin Star"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.opentable.com/r/nisei-san-francisco", "label": "Book" }
+          "booking": {
+            "url": "https://www.opentable.com/r/nisei-san-francisco",
+            "label": "Book"
+          }
         },
         {
           "id": "the-shota",
           "name": "The Shota",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-shota",
           "mapUrl": "https://maps.google.com/?q=The+Shota+115+Sansome+St+San+Francisco",
-          "image": { "src": "images/the-shota.jpg", "alt": "The Shota" },
+          "image": {
+            "src": "images/the-shota.jpg",
+            "alt": "The Shota"
+          },
           "description": "Edomae sushi with kaiseki. Temporarily closed. 115 Sansome St, FiDi.",
-          "chips": [{ "label": "Japanese / Sushi" }, { "label": "$$$$" }],
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "⭐ Michelin Star" },
+          "michelin": {
+            "label": "\u2b50 Michelin Star"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.theshotasf.com/", "label": "Book" }
+          "booking": {
+            "url": "https://www.theshotasf.com/",
+            "label": "Book"
+          }
         },
         {
           "id": "madcap",
           "name": "Madcap",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
           "mapUrl": "https://maps.google.com/?q=Madcap+198+Sir+Francis+Drake+Blvd+San+Anselmo",
-          "image": { "src": "images/madcap.jpg", "alt": "Madcap" },
+          "image": {
+            "src": "images/madcap.jpg",
+            "alt": "Madcap"
+          },
           "description": "Contemporary Asian fine dining. 198 Sir Francis Drake Blvd, San Anselmo.",
-          "chips": [{ "label": "Asian Contemporary" }, { "label": "$$$$" }],
+          "chips": [
+            {
+              "label": "Asian Contemporary"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "⭐ Michelin Star" },
+          "michelin": {
+            "label": "\u2b50 Michelin Star"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.exploretock.com/madcapmarin", "label": "Book" }
+          "booking": {
+            "url": "https://www.exploretock.com/madcapmarin",
+            "label": "Book"
+          }
         }
       ]
     },
@@ -144,170 +342,449 @@
           "name": "Dumpling Home",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/dumpling-home",
           "mapUrl": "https://maps.google.com/?q=Dumpling+Home+379+Hayes+St+San+Francisco",
-          "image": { "src": "images/dumpling-home.jpg", "alt": "Dumpling Home" },
+          "image": {
+            "src": "images/dumpling-home.jpg",
+            "alt": "Dumpling Home"
+          },
           "description": "Best xiao long bao in the city. 379 Hayes St, Hayes Valley.",
-          "chips": [{ "label": "Chinese / Dumplings" }, { "label": "$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [{ "source": "Infatuation", "value": "8.8" }],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://www.opentable.com/r/dumpling-home-san-francisco", "label": "Book" }
+          "chips": [
+            {
+              "label": "Chinese / Dumplings"
+            },
+            {
+              "label": "$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#7)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#8)"
+            }
+          ],
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/r/dumpling-home-san-francisco",
+            "label": "Book"
+          }
         },
         {
           "id": "bansang",
           "name": "Bansang",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/bansang",
           "mapUrl": "https://maps.google.com/?q=Bansang+San+Francisco",
-          "image": { "src": "images/bansang.jpg", "alt": "Bansang" },
+          "image": {
+            "src": "images/bansang.jpg",
+            "alt": "Bansang"
+          },
           "description": "Korean Bib Gourmand restaurant.",
-          "chips": [{ "label": "Korean" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Korean"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/bansang", "label": "Book" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/bansang",
+            "label": "Book"
+          }
         },
         {
           "id": "rintaro",
           "name": "Izakaya Rintaro",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/izakaya-rintaro",
           "mapUrl": "https://maps.google.com/?q=Rintaro+282+14th+St+San+Francisco",
-          "image": { "src": "images/rintaro.jpg", "alt": "Izakaya Rintaro" },
+          "image": {
+            "src": "images/rintaro.jpg",
+            "alt": "Izakaya Rintaro"
+          },
           "description": "High-end izakaya with handcrafted interior. 282 14th St, Mission.",
-          "chips": [{ "label": "Japanese / Izakaya" }, { "label": "$$" }, { "label": "Available: Mon" }],
-          "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://resy.com/cities/san-francisco-ca/venues/izakaya-rintaro?date=2026-01-19&seats=2", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Izakaya"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.2 (#15)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#14)"
+            }
+          ],
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://resy.com/cities/san-francisco-ca/venues/izakaya-rintaro?date=2026-01-19&seats=2",
+            "label": "Book"
+          }
         },
         {
           "id": "okane",
           "name": "Okane",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/okane",
           "mapUrl": "https://maps.google.com/?q=Okane+San+Francisco",
-          "image": { "src": "images/okane.jpg", "alt": "Okane" },
+          "image": {
+            "src": "images/okane.jpg",
+            "alt": "Okane"
+          },
           "description": "Japanese Bib Gourmand restaurant.",
-          "chips": [{ "label": "Japanese" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://www.opentable.com/okane?ref=18490", "label": "Book" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/okane?ref=18490",
+            "label": "Book"
+          }
         },
         {
           "id": "z-y",
           "name": "Z & Y",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/z-y",
           "mapUrl": "https://maps.google.com/?q=Z+Y+Restaurant+Chinatown+San+Francisco",
-          "image": { "src": "images/z-y.jpg", "alt": "Z & Y" },
+          "image": {
+            "src": "images/z-y.jpg",
+            "alt": "Z & Y"
+          },
           "description": "Sichuan Bib Gourmand restaurant. Chinatown.",
-          "chips": [{ "label": "Chinese / Sichuan" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://www.opentable.com/z-and-y-restaurant?ref=18490", "label": "Book" }
+          "chips": [
+            {
+              "label": "Chinese / Sichuan"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.8 (#23)"
+            },
+            {
+              "source": "Google",
+              "value": "4.2 (#26)"
+            }
+          ],
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/z-and-y-restaurant?ref=18490",
+            "label": "Book"
+          }
         },
         {
           "id": "yank-sing",
           "name": "Yank Sing",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yank-sing",
           "mapUrl": "https://maps.google.com/?q=Yank+Sing+San+Francisco",
-          "image": { "src": "images/yank-sing.jpg", "alt": "Yank Sing" },
+          "image": {
+            "src": "images/yank-sing.jpg",
+            "alt": "Yank Sing"
+          },
           "description": "Classic dim sum with Bib Gourmand recognition.",
-          "chips": [{ "label": "Chinese / Dim Sum" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Chinese / Dim Sum"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yank-sing", "label": "Book" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yank-sing",
+            "label": "Book"
+          }
         },
         {
           "id": "top-hatters-kitchen",
           "name": "Top Hatters Kitchen",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-leandro/restaurant/top-hatters-kitchen",
           "mapUrl": "https://maps.google.com/?q=Top+Hatters+Kitchen+San+Leandro",
-          "image": { "src": "images/top-hatters.jpg", "alt": "Top Hatters Kitchen" },
+          "image": {
+            "src": "images/top-hatters.jpg",
+            "alt": "Top Hatters Kitchen"
+          },
           "description": "Bib Gourmand contemporary restaurant. San Leandro.",
-          "chips": [{ "label": "Contemporary" }, { "label": "$$" }, { "label": "Available: Sun" }],
+          "chips": [
+            {
+              "label": "Contemporary"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-leandro/restaurant/top-hatters-kitchen", "label": "Book" }
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-leandro/restaurant/top-hatters-kitchen",
+            "label": "Book"
+          }
         },
         {
           "id": "sushi-ran",
           "name": "Sushi Ran",
           "primaryUrl": "https://guide.michelin.com/us/en/california/sausalito/restaurant/sushi-ran",
           "mapUrl": "https://maps.google.com/?q=Sushi+Ran+Sausalito",
-          "image": { "src": "images/sushi-ran.jpg", "alt": "Sushi Ran" },
+          "image": {
+            "src": "images/sushi-ran.jpg",
+            "alt": "Sushi Ran"
+          },
           "description": "Bib Gourmand sushi in Sausalito.",
-          "chips": [{ "label": "Japanese / Sushi" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/sausalito/restaurant/sushi-ran", "label": "Book" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/sausalito/restaurant/sushi-ran",
+            "label": "Book"
+          }
         },
         {
           "id": "soba-ichi",
           "name": "Soba Ichi",
           "primaryUrl": "https://guide.michelin.com/us/en/california/oakland/restaurant/soba-ichi",
           "mapUrl": "https://maps.google.com/?q=Soba+Ichi+Oakland",
-          "image": { "src": "images/soba-ichi.jpg", "alt": "Soba Ichi" },
+          "image": {
+            "src": "images/soba-ichi.jpg",
+            "alt": "Soba Ichi"
+          },
           "description": "Bib Gourmand soba in Oakland.",
-          "chips": [{ "label": "Japanese / Soba" }, { "label": "$$" }, { "label": "Available: Sun" }],
+          "chips": [
+            {
+              "label": "Japanese / Soba"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/soba-ichi", "label": "Info" }
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/soba-ichi",
+            "label": "Info"
+          }
         },
         {
           "id": "teni-east-kitchen",
           "name": "Teni East Kitchen",
           "primaryUrl": "https://guide.michelin.com/us/en/california/oakland/restaurant/teni-east-kitchen",
           "mapUrl": "https://maps.google.com/?q=Teni+East+Kitchen+Oakland",
-          "image": { "src": "images/teni-east.jpg", "alt": "Teni East Kitchen" },
+          "image": {
+            "src": "images/teni-east.jpg",
+            "alt": "Teni East Kitchen"
+          },
           "description": "Bib Gourmand Burmese in Oakland.",
-          "chips": [{ "label": "Burmese" }, { "label": "$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Burmese"
+            },
+            {
+              "label": "$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/teni-east-kitchen", "label": "Info" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/teni-east-kitchen",
+            "label": "Info"
+          }
         },
         {
           "id": "great-china",
           "name": "Great China",
           "primaryUrl": "https://guide.michelin.com/us/en/california/berkeley/restaurant/great-china",
           "mapUrl": "https://maps.google.com/?q=Great+China+Berkeley",
-          "image": { "src": "images/great-china.jpg", "alt": "Great China" },
+          "image": {
+            "src": "images/great-china.jpg",
+            "alt": "Great China"
+          },
           "description": "Bib Gourmand Chinese in Berkeley.",
-          "chips": [{ "label": "Chinese" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/great-china", "label": "Book" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/great-china",
+            "label": "Book"
+          }
         },
         {
           "id": "china-village",
           "name": "China Village",
           "primaryUrl": "https://guide.michelin.com/us/en/california/albany/restaurant/china-village",
           "mapUrl": "https://maps.google.com/?q=China+Village+Albany",
-          "image": { "src": "images/china-village.jpg", "alt": "China Village" },
+          "image": {
+            "src": "images/china-village.jpg",
+            "alt": "China Village"
+          },
           "description": "Bib Gourmand Chinese in Albany.",
-          "chips": [{ "label": "Chinese" }, { "label": "$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/albany/restaurant/china-village", "label": "Info" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/albany/restaurant/china-village",
+            "label": "Info"
+          }
         },
         {
           "id": "ippuku",
           "name": "Ippuku",
           "primaryUrl": "https://guide.michelin.com/us/en/california/berkeley/restaurant/ippuku",
           "mapUrl": "https://maps.google.com/?q=Ippuku+Berkeley",
-          "image": { "src": "images/ippuku.jpg", "alt": "Ippuku" },
+          "image": {
+            "src": "images/ippuku.jpg",
+            "alt": "Ippuku"
+          },
           "description": "Bib Gourmand izakaya in Berkeley.",
-          "chips": [{ "label": "Japanese / Izakaya" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Japanese / Izakaya"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/ippuku", "label": "Book" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/ippuku",
+            "label": "Book"
+          }
         },
         {
           "id": "new-dumpling",
           "name": "New Dumpling",
           "primaryUrl": "https://guide.michelin.com/us/en/california/el-cerrito/restaurant/new-dumpling",
           "mapUrl": "https://maps.google.com/?q=New+Dumpling+El+Cerrito",
-          "image": { "src": "images/new-dumpling.jpg", "alt": "New Dumpling" },
+          "image": {
+            "src": "images/new-dumpling.jpg",
+            "alt": "New Dumpling"
+          },
           "description": "Bib Gourmand dumplings in El Cerrito.",
-          "chips": [{ "label": "Chinese / Dumplings" }, { "label": "$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Chinese / Dumplings"
+            },
+            {
+              "label": "$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "🍽️ Bib Gourmand" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/el-cerrito/restaurant/new-dumpling", "label": "Info" }
+          "michelin": {
+            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/el-cerrito/restaurant/new-dumpling",
+            "label": "Info"
+          }
         }
       ]
     },
@@ -321,304 +798,912 @@
           "name": "Niku Steakhouse",
           "primaryUrl": "https://www.nikusteakhouse.com/",
           "mapUrl": "https://maps.google.com/?q=Niku+Steakhouse+61+Division+St+San+Francisco",
-          "image": { "src": "images/niku-steakhouse.jpg", "alt": "Niku Steakhouse" },
+          "image": {
+            "src": "images/niku-steakhouse.jpg",
+            "alt": "Niku Steakhouse"
+          },
           "description": "A5 Japanese Wagyu, dry-aged beef. 61 Division St, Design District.",
-          "chips": [{ "label": "Japanese / Wagyu" }, { "label": "$$$$" }, { "label": "Available: Sun" }],
-          "ratings": [{ "source": "Google", "value": "4.5" }],
-          "michelin": { "label": "Michelin Guide" },
+          "chips": [
+            {
+              "label": "Japanese / Wagyu"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Google",
+              "value": "4.5 (#15)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://www.opentable.com/r/niku-steakhouse-san-francisco", "label": "Book" }
+          "booking": {
+            "url": "https://www.opentable.com/r/niku-steakhouse-san-francisco",
+            "label": "Book"
+          }
         },
         {
           "id": "omakase-sf",
           "name": "Omakase",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/omakase",
           "mapUrl": "https://maps.google.com/?q=Omakase+665+Townsend+St+San+Francisco",
-          "image": { "src": "images/omakase-sf.jpg", "alt": "Omakase" },
+          "image": {
+            "src": "images/omakase-sf.jpg",
+            "alt": "Omakase"
+          },
           "description": "Intimate 12-seat Edomae-style omakase. 665 Townsend St, SOMA.",
-          "chips": [{ "label": "Omakase / Sushi" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.omakasesf.com/", "label": "Book" }
+          "chips": [
+            {
+              "label": "Omakase / Sushi"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#8)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#9)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.omakasesf.com/",
+            "label": "Book"
+          }
         },
         {
           "id": "nari",
           "name": "Nari",
           "primaryUrl": "https://www.narisf.com/",
           "mapUrl": "https://maps.google.com/?q=Nari+Restaurant+1625+Post+St+San+Francisco",
-          "image": { "src": "images/nari.jpg", "alt": "Nari" },
+          "image": {
+            "src": "images/nari.jpg",
+            "alt": "Nari"
+          },
           "description": "Chef Pim's refined Thai cuisine. 1625 Post St, Japantown.",
-          "chips": [{ "label": "Thai-Californian" }, { "label": "$$$$" }, { "label": "Available: Sun" }],
-          "ratings": [{ "source": "Google", "value": "4.3" }],
-          "michelin": { "label": "Michelin Guide" },
+          "chips": [
+            {
+              "label": "Thai-Californian"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.3 (#13)"
+            },
+            {
+              "source": "Google",
+              "value": "4.3 (#24)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://resy.com/cities/san-francisco-ca/venues/nari?date=2026-01-19&seats=2", "label": "Book" }
+          "booking": {
+            "url": "https://resy.com/cities/san-francisco-ca/venues/nari?date=2026-01-19&seats=2",
+            "label": "Book"
+          }
         },
         {
           "id": "kin-khao",
           "name": "Kin Khao",
           "primaryUrl": "https://www.kinkhao.com/",
           "mapUrl": "https://maps.google.com/?q=Kin+Khao+55+Cyril+Magnin+St+San+Francisco",
-          "image": { "src": "images/kin-khao.jpg", "alt": "Kin Khao" },
+          "image": {
+            "src": "images/kin-khao.jpg",
+            "alt": "Kin Khao"
+          },
           "description": "Bold Thai flavors. 55 Cyril Magnin St, Union Square.",
-          "chips": [{ "label": "Thai" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [{ "source": "Google", "value": "4.2" }],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://resy.com/cities/san-francisco-ca/venues/kin-khao?date=2026-01-19&seats=2", "label": "Book" }
+          "chips": [
+            {
+              "label": "Thai"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.9 (#22)"
+            },
+            {
+              "source": "Google",
+              "value": "4.2 (#27)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://resy.com/cities/san-francisco-ca/venues/kin-khao?date=2026-01-19&seats=2",
+            "label": "Book"
+          }
         },
         {
           "id": "ju-ni",
-          "name": "Jū-Ni",
+          "name": "J\u016b-Ni",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ju-ni",
           "mapUrl": "https://maps.google.com/?q=Ju-Ni+1335+Fulton+St+San+Francisco",
-          "image": { "src": "images/ju-ni.jpg", "alt": "Jū-Ni" },
+          "image": {
+            "src": "images/ju-ni.jpg",
+            "alt": "J\u016b-Ni"
+          },
           "description": "12-seat omakase. 1335 Fulton St, Western Addition.",
-          "chips": [{ "label": "Omakase / Sushi" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.exploretock.com/juni", "label": "Book" }
+          "chips": [
+            {
+              "label": "Omakase / Sushi"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#4)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#4)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.exploretock.com/juni",
+            "label": "Book"
+          }
         },
         {
           "id": "ken",
           "name": "Ken",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken",
           "mapUrl": "https://maps.google.com/?q=Ken+Restaurant+San+Francisco",
-          "image": { "src": "images/ken.jpg", "alt": "Ken" },
+          "image": {
+            "src": "images/ken.jpg",
+            "alt": "Ken"
+          },
           "description": "Michelin Guide listed sushi restaurant.",
-          "chips": [{ "label": "Sushi" }, { "label": "$$$$" }, { "label": "Available: Sun" }],
+          "chips": [
+            {
+              "label": "Sushi"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
+          "michelin": {
+            "label": "Michelin Guide"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken", "label": "Book" }
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken",
+            "label": "Book"
+          }
         },
         {
           "id": "yuji",
           "name": "Yuji",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yuji",
           "mapUrl": "https://maps.google.com/?q=Yuji+San+Francisco",
-          "image": { "src": "images/yuji.jpg", "alt": "Yuji" },
+          "image": {
+            "src": "images/yuji.jpg",
+            "alt": "Yuji"
+          },
           "description": "Michelin Guide listed Japanese restaurant.",
-          "chips": [{ "label": "Japanese" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.exploretock.com/yuji/search?date=2026-01-19&size=2&time=20%3A00", "label": "Book" }
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.exploretock.com/yuji/search?date=2026-01-19&size=2&time=20%3A00",
+            "label": "Book"
+          }
         },
         {
           "id": "kusakabe",
           "name": "Kusakabe",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kusakabe",
           "mapUrl": "https://maps.google.com/?q=Kusakabe+San+Francisco",
-          "image": { "src": "images/kusakabe.jpg", "alt": "Kusakabe" },
+          "image": {
+            "src": "images/kusakabe.jpg",
+            "alt": "Kusakabe"
+          },
           "description": "Michelin Guide listed Japanese omakase.",
-          "chips": [{ "label": "Japanese" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kusakabe", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#5)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#5)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kusakabe",
+            "label": "Book"
+          }
         },
         {
           "id": "robin",
           "name": "Robin",
           "primaryUrl": "http://robinomakase.com/",
           "mapUrl": "https://maps.google.com/?q=Robin+620+Gough+St+San+Francisco",
-          "image": { "src": "images/robin.jpg", "alt": "Robin" },
+          "image": {
+            "src": "images/robin.jpg",
+            "alt": "Robin"
+          },
           "description": "Omakase sushi. 620 Gough St, Hayes Valley.",
-          "chips": [{ "label": "Omakase / Sushi" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "http://robinomakase.com/", "label": "Book" }
+          "chips": [
+            {
+              "label": "Omakase / Sushi"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.0 (#20)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#16)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "http://robinomakase.com/",
+            "label": "Book"
+          }
         },
         {
           "id": "china-live",
           "name": "China Live",
           "primaryUrl": "https://chinalivesf.com/",
           "mapUrl": "https://maps.google.com/?q=China+Live+644+Broadway+San+Francisco",
-          "image": { "src": "images/china-live.jpg", "alt": "China Live" },
+          "image": {
+            "src": "images/china-live.jpg",
+            "alt": "China Live"
+          },
           "description": "Massive emporium. 644 Broadway, Chinatown.",
-          "chips": [{ "label": "Chinese" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.opentable.com/r/china-live-san-francisco", "label": "Book" }
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/r/china-live-san-francisco",
+            "label": "Book"
+          }
         },
         {
           "id": "sungho",
           "name": "Sungho",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sungho",
           "mapUrl": "https://maps.google.com/?q=Sungho+San+Francisco",
-          "image": { "src": "images/sungho.jpg", "alt": "Sungho" },
+          "image": {
+            "src": "images/sungho.jpg",
+            "alt": "Sungho"
+          },
           "description": "Michelin Guide listed Korean.",
-          "chips": [{ "label": "Korean" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Korean"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sungho", "label": "Book" }
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sungho",
+            "label": "Book"
+          }
         },
         {
           "id": "mensho",
           "name": "Mensho",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mensho",
           "mapUrl": "https://maps.google.com/?q=Mensho+San+Francisco",
-          "image": { "src": "images/mensho.jpg", "alt": "Mensho" },
+          "image": {
+            "src": "images/mensho.jpg",
+            "alt": "Mensho"
+          },
           "description": "Michelin Guide listed ramen.",
-          "chips": [{ "label": "Japanese / Ramen" }, { "label": "$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Japanese / Ramen"
+            },
+            {
+              "label": "$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mensho", "label": "Info" }
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mensho",
+            "label": "Info"
+          }
         },
         {
           "id": "liholiho-yacht-club",
           "name": "Liholiho Yacht Club",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/liholiho-yacht-club",
           "mapUrl": "https://maps.google.com/?q=Liholiho+Yacht+Club+San+Francisco",
-          "image": { "src": "images/liholiho.jpg", "alt": "Liholiho Yacht Club" },
+          "image": {
+            "src": "images/liholiho.jpg",
+            "alt": "Liholiho Yacht Club"
+          },
           "description": "Michelin Guide listed Asian fusion.",
-          "chips": [{ "label": "Asian Fusion" }, { "label": "$$$" }, { "label": "Available: Sun" }],
+          "chips": [
+            {
+              "label": "Asian Fusion"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
+          "michelin": {
+            "label": "Michelin Guide"
+          },
           "closedMonday": true,
-          "booking": { "url": "https://lycsf.com/pages/reservations", "label": "Book" }
+          "booking": {
+            "url": "https://lycsf.com/pages/reservations",
+            "label": "Book"
+          }
         },
         {
           "id": "hk-lounge-bistro",
           "name": "HK Lounge Bistro",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hk-lounge-bistro",
           "mapUrl": "https://maps.google.com/?q=HK+Lounge+Bistro+San+Francisco",
-          "image": { "src": "images/hk-lounge.jpg", "alt": "HK Lounge Bistro" },
+          "image": {
+            "src": "images/hk-lounge.jpg",
+            "alt": "HK Lounge Bistro"
+          },
           "description": "Michelin Guide listed Chinese.",
-          "chips": [{ "label": "Chinese" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
           "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.opentable.com/r/hk-lounge-bistro-san-francisco?ref=18490", "label": "Book" }
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/r/hk-lounge-bistro-san-francisco?ref=18490",
+            "label": "Book"
+          }
         },
         {
           "id": "oma-sf",
           "name": "Oma San Francisco Station",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/oma-san-francisco-station",
           "mapUrl": "https://maps.google.com/?q=Oma+San+Francisco",
-          "image": { "src": "images/oma-sf.jpg", "alt": "Oma San Francisco Station" },
+          "image": {
+            "src": "images/oma-sf.jpg",
+            "alt": "Oma San Francisco Station"
+          },
           "description": "Michelin Guide listed Japanese.",
-          "chips": [{ "label": "Japanese" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/oma-san-francisco-station", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.3 (#14)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#10)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/oma-san-francisco-station",
+            "label": "Book"
+          }
         },
         {
           "id": "shizen",
           "name": "Shizen",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/shizen",
           "mapUrl": "https://maps.google.com/?q=Shizen+San+Francisco",
-          "image": { "src": "images/shizen.jpg", "alt": "Shizen" },
+          "image": {
+            "src": "images/shizen.jpg",
+            "alt": "Shizen"
+          },
           "description": "Michelin Guide listed vegan Japanese sushi.",
-          "chips": [{ "label": "Japanese / Vegan Sushi" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/shizen", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Vegan Sushi"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#9)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#11)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/shizen",
+            "label": "Book"
+          }
         },
         {
           "id": "four-kings",
           "name": "Four Kings",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
           "mapUrl": "https://maps.google.com/?q=Four+Kings+San+Francisco",
-          "image": { "src": "images/four-kings.jpg", "alt": "Four Kings" },
+          "image": {
+            "src": "images/four-kings.jpg",
+            "alt": "Four Kings"
+          },
           "description": "Michelin Guide listed Chinese.",
-          "chips": [{ "label": "Chinese" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings", "label": "Book" }
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.2 (#16)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#18)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
+            "label": "Book"
+          }
         },
         {
           "id": "harborview",
           "name": "Harborview",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
           "mapUrl": "https://maps.google.com/?q=Harborview+San+Francisco",
-          "image": { "src": "images/harborview.jpg", "alt": "Harborview" },
+          "image": {
+            "src": "images/harborview.jpg",
+            "alt": "Harborview"
+          },
           "description": "Michelin Guide listed dim sum.",
-          "chips": [{ "label": "Chinese / Dim Sum" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview", "label": "Book" }
+          "chips": [
+            {
+              "label": "Chinese / Dim Sum"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.1 (#17)"
+            },
+            {
+              "source": "Google",
+              "value": "4.3 (#25)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
+            "label": "Book"
+          }
         },
         {
           "id": "palette-tea-house",
           "name": "Palette Tea House",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/palette-tea-house",
           "mapUrl": "https://maps.google.com/?q=Palette+Tea+House+San+Francisco",
-          "image": { "src": "images/palette-tea-house.jpg", "alt": "Palette Tea House" },
+          "image": {
+            "src": "images/palette-tea-house.jpg",
+            "alt": "Palette Tea House"
+          },
           "description": "Michelin Guide listed dim sum.",
-          "chips": [{ "label": "Chinese / Dim Sum" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/palette-tea-house", "label": "Book" }
+          "chips": [
+            {
+              "label": "Chinese / Dim Sum"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.1 (#18)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#19)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/palette-tea-house",
+            "label": "Book"
+          }
         },
         {
           "id": "saru-sushi-bar",
           "name": "Saru Sushi Bar",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saru",
           "mapUrl": "https://maps.google.com/?q=Saru+Sushi+Bar+San+Francisco",
-          "image": { "src": "images/saru.jpg", "alt": "Saru Sushi Bar" },
+          "image": {
+            "src": "images/saru.jpg",
+            "alt": "Saru Sushi Bar"
+          },
           "description": "Michelin Guide listed sushi.",
-          "chips": [{ "label": "Japanese / Sushi" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saru", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#10)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#12)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saru",
+            "label": "Book"
+          }
         },
         {
           "id": "hamano-sushi",
           "name": "Hamano Sushi",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hamano-sushi",
           "mapUrl": "https://maps.google.com/?q=Hamano+Sushi+San+Francisco",
-          "image": { "src": "images/hamano-sushi.jpg", "alt": "Hamano Sushi" },
+          "image": {
+            "src": "images/hamano-sushi.jpg",
+            "alt": "Hamano Sushi"
+          },
           "description": "Michelin Guide listed sushi.",
-          "chips": [{ "label": "Japanese / Sushi" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hamano-sushi", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.7 (#25)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#20)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hamano-sushi",
+            "label": "Book"
+          }
         },
         {
           "id": "noodle-haystack",
           "name": "Noodle in a Haystack",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
           "mapUrl": "https://maps.google.com/?q=Noodle+in+a+Haystack+San+Francisco",
-          "image": { "src": "images/noodle-haystack.jpg", "alt": "Noodle in a Haystack" },
+          "image": {
+            "src": "images/noodle-haystack.jpg",
+            "alt": "Noodle in a Haystack"
+          },
           "description": "Michelin Guide listed Japanese noodles.",
-          "chips": [{ "label": "Japanese / Noodles" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Noodles"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.7 (#1)"
+            },
+            {
+              "source": "Google",
+              "value": "4.8 (#1)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
+            "label": "Book"
+          }
         },
         {
           "id": "akikos",
           "name": "Akiko's",
           "primaryUrl": "https://www.akikosrestaurant.com/",
           "mapUrl": "https://maps.google.com/?q=Akikos+Restaurant+San+Francisco",
-          "image": { "src": "images/akikos.jpg", "alt": "Akiko's" },
+          "image": {
+            "src": "images/akikos.jpg",
+            "alt": "Akiko's"
+          },
           "description": "Premium omakase sushi experience.",
-          "chips": [{ "label": "Japanese / Sushi" }, { "label": "$$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.opentable.com/booking/restref/availability?rid=51061&lang=en-US&color=1&r3uid=cfe&dark=true&correlationId=f32c0ae2-3b7b-490c-ad3d-67f334f020e4&restRef=51061&partySize=2&dateTime=2026-01-19T19%3A00&otSource=Restaurant%20website", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.7 (#26)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#17)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/booking/restref/availability?rid=51061&lang=en-US&color=1&r3uid=cfe&dark=true&correlationId=f32c0ae2-3b7b-490c-ad3d-67f334f020e4&restRef=51061&partySize=2&dateTime=2026-01-19T19%3A00&otSource=Restaurant%20website",
+            "label": "Book"
+          }
         },
         {
           "id": "pabu-izakaya",
           "name": "PABU Izakaya",
           "primaryUrl": "https://www.michaelmina.net/restaurants/pabu-san-francisco/",
           "mapUrl": "https://maps.google.com/?q=PABU+Izakaya+San+Francisco",
-          "image": { "src": "images/pabu-izakaya.jpg", "alt": "PABU Izakaya" },
+          "image": {
+            "src": "images/pabu-izakaya.jpg",
+            "alt": "PABU Izakaya"
+          },
           "description": "Michael Mina's Japanese izakaya.",
-          "chips": [{ "label": "Japanese / Izakaya" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.google.com/maps/reserve/dine?c=CaBbs0zvnj8&ssst=2026-01-20T02%3A30%3A00.000Z&ld=20260119T183000&ps=2&gei=UrFeaeCuMIOf4-EP0vDm8AU&hl=en-US&opi=89978449&source=pa", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Izakaya"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.1 (#19)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#21)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.google.com/maps/reserve/dine?c=CaBbs0zvnj8&ssst=2026-01-20T02%3A30%3A00.000Z&ld=20260119T183000&ps=2&gei=UrFeaeCuMIOf4-EP0vDm8AU&hl=en-US&opi=89978449&source=pa",
+            "label": "Book"
+          }
         },
         {
           "id": "ozumo",
           "name": "Ozumo",
           "primaryUrl": "https://www.ozumo.com/san-francisco/",
           "mapUrl": "https://maps.google.com/?q=Ozumo+161+Steuart+St+San+Francisco",
-          "image": { "src": "images/ozumo.jpg", "alt": "Ozumo" },
+          "image": {
+            "src": "images/ozumo.jpg",
+            "alt": "Ozumo"
+          },
           "description": "Japanese robata and sushi. 161 Steuart St, Embarcadero.",
-          "chips": [{ "label": "Japanese / Robata" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Michelin Guide" },
-          "booking": { "url": "https://www.opentable.com/r/ozumo-san-francisco", "label": "Book" }
+          "chips": [
+            {
+              "label": "Japanese / Robata"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.0 (#21)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#22)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/r/ozumo-san-francisco",
+            "label": "Book"
+          }
         }
       ]
     },
@@ -632,36 +1717,109 @@
           "name": "Z&Y Peking Duck",
           "primaryUrl": "https://zandypekingduck.com/",
           "mapUrl": "https://maps.google.com/?q=Z+Y+Peking+Duck+Chinatown+San+Francisco",
-          "image": { "src": "images/zy-peking-duck.jpg", "alt": "Z&Y Peking Duck" },
+          "image": {
+            "src": "images/zy-peking-duck.jpg",
+            "alt": "Z&Y Peking Duck"
+          },
           "description": "Reserve duck ahead. Chinatown.",
-          "chips": [{ "label": "Chinese / Sichuan" }, { "label": "$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [{ "source": "Infatuation", "value": "8.3" }],
-          "michelin": { "label": "Highly Acclaimed" },
-          "booking": { "url": "https://www.opentable.com/r/z-and-y-peking-duck-san-francisco", "label": "Book" }
+          "chips": [
+            {
+              "label": "Chinese / Sichuan"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Infatuation",
+              "value": "8.3"
+            }
+          ],
+          "michelin": {
+            "label": "Highly Acclaimed"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/r/z-and-y-peking-duck-san-francisco",
+            "label": "Book"
+          }
         },
         {
           "id": "chisai-sushi-club",
-          "name": "Chīsai Sushi Club",
+          "name": "Ch\u012bsai Sushi Club",
           "primaryUrl": "https://chisaisushiclub.com/",
           "mapUrl": "https://maps.google.com/?q=Chisai+Sushi+Club+3369+Mission+St+San+Francisco",
-          "image": { "src": "images/chisai-sushi-club.jpg", "alt": "Chīsai Sushi Club" },
+          "image": {
+            "src": "images/chisai-sushi-club.jpg",
+            "alt": "Ch\u012bsai Sushi Club"
+          },
           "description": "$95 for 13-course omakase. 3369 Mission St, Bernal Heights.",
-          "chips": [{ "label": "Omakase / Sushi" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [],
-          "michelin": { "label": "Hidden Gem" },
-          "booking": { "url": "https://resy.com/cities/san-francisco-ca/venues/chisai-sushi-club", "label": "Book" }
+          "chips": [
+            {
+              "label": "Omakase / Sushi"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#11)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#6)"
+            }
+          ],
+          "michelin": {
+            "label": "Hidden Gem"
+          },
+          "booking": {
+            "url": "https://resy.com/cities/san-francisco-ca/venues/chisai-sushi-club",
+            "label": "Book"
+          }
         },
         {
           "id": "brothers-korean-bbq",
           "name": "Brothers Korean BBQ",
           "primaryUrl": "https://brothersrestaurantsf.com/",
           "mapUrl": "https://maps.google.com/?q=Brothers+Korean+BBQ+Richmond+District+San+Francisco",
-          "image": { "src": "images/brothers-korean-bbq.jpg", "alt": "Brothers Korean BBQ" },
+          "image": {
+            "src": "images/brothers-korean-bbq.jpg",
+            "alt": "Brothers Korean BBQ"
+          },
           "description": "Charcoal grills, lively atmosphere. Richmond District.",
-          "chips": [{ "label": "Korean BBQ" }, { "label": "$$$" }, { "label": "Available: Mon & Sun" }],
-          "ratings": [{ "source": "Infatuation", "value": "8.1" }],
-          "michelin": { "label": "Highly Acclaimed" },
-          "booking": { "url": "https://www.yelp.com/biz/brothers-korean-bbq-san-francisco", "label": "Info" }
+          "chips": [
+            {
+              "label": "Korean BBQ"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Infatuation",
+              "value": "8.1"
+            }
+          ],
+          "michelin": {
+            "label": "Highly Acclaimed"
+          },
+          "booking": {
+            "url": "https://www.yelp.com/biz/brothers-korean-bbq-san-francisco",
+            "label": "Info"
+          }
         }
       ]
     }

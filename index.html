@@ -563,7 +563,13 @@
                         container.appendChild(labelDiv);
                     }
 
-                    (section.restaurants || []).forEach(rest => {
+                    const sortedRestaurants = [...(section.restaurants || [])].sort((a, b) => {
+                        const aCollapsed = !isFeaturedCuisine(a) || a.closedMonday;
+                        const bCollapsed = !isFeaturedCuisine(b) || b.closedMonday;
+                        return aCollapsed - bCollapsed;
+                    });
+
+                    sortedRestaurants.forEach(rest => {
                         const article = restaurantTemplate.content.firstElementChild.cloneNode(true);
                         populateRestaurant(article, rest);
                         container.appendChild(article);
