@@ -158,6 +158,11 @@
             border-color: #4CAF50;
             color: #2E7D32;
         }
+        .chip.warning {
+            background: #FFEBEE;
+            border-color: #E53935;
+            color: #C62828;
+        }
         .restaurant-right {
             text-align: right;
             min-width: 100px;
@@ -653,7 +658,14 @@
                 chipsContainer.innerHTML = '';
                 rest.chips.forEach(chip => {
                     const span = document.createElement('span');
-                    span.className = chip.label.startsWith('Available') ? 'chip availability' : 'chip';
+                    const label = chip.label.toLowerCase();
+                    if (chip.label.startsWith('Available')) {
+                        span.className = 'chip availability';
+                    } else if (label === 'call to reserve' || label === 'walk-ins only') {
+                        span.className = 'chip warning';
+                    } else {
+                        span.className = 'chip';
+                    }
                     span.textContent = chip.label;
                     chipsContainer.appendChild(span);
                 });
