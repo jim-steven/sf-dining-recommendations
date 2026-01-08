@@ -1055,6 +1055,9 @@
             },
             {
               "label": "Available: Mon & Sun"
+            },
+            {
+              "label": "Email to Reserve"
             }
           ],
           "ratings": [
@@ -1071,46 +1074,7 @@
             "label": "Michelin Guide"
           },
           "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hamano-sushi",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "noodle-haystack",
-          "name": "Noodle in a Haystack",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
-          "mapUrl": "https://maps.google.com/?q=Noodle+in+a+Haystack+San+Francisco",
-          "image": {
-            "src": "images/noodle-haystack.jpg",
-            "alt": "Noodle in a Haystack"
-          },
-          "description": "Michelin Guide listed Japanese noodles.",
-          "chips": [
-            {
-              "label": "Japanese / Noodles"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.7 (#1)"
-            },
-            {
-              "source": "Google",
-              "value": "4.8 (#1)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
+            "url": "https://hamanosushi.com/reservationhamanosushicom",
             "label": "Book"
           }
         },
@@ -1855,6 +1819,43 @@
           "closedMonday": true,
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "noodle-haystack",
+          "name": "Noodle in a Haystack",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
+          "mapUrl": "https://maps.google.com/?q=Noodle+in+a+Haystack+San+Francisco",
+          "image": {
+            "src": "images/noodle-haystack.jpg",
+            "alt": "Noodle in a Haystack"
+          },
+          "description": "Michelin Guide listed Japanese noodles. Fully booked.",
+          "chips": [
+            {
+              "label": "Japanese / Noodles"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.7 (#1)"
+            },
+            {
+              "source": "Google",
+              "value": "4.8 (#1)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
             "label": "Book"
           }
         }
