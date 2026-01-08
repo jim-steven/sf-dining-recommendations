@@ -9,7 +9,7 @@
     "title": "Asian Restaurant Recommendations",
     "date": "Monday, January 19, 2026",
     "description": "All Michelin-recognized Asian restaurants in SF Bay Area, with Korean, Japanese, and Chinese highlighted.",
-    "noteHtml": "<strong>How to use:</strong> Fully visible cards are our top picks for Monday\u2014Korean, Japanese, and Chinese restaurants open that day. Collapsed (grayed-out) cards are either closed Monday or other Asian cuisines. Click any collapsed card to expand it. Look for green <strong>Available: Mon</strong> chips."
+    "noteHtml": "<strong>How to use:</strong> Fully visible cards are our top picks for Monday—Korean, Japanese, and Chinese restaurants open that day. Collapsed (grayed-out) cards are either closed Monday or other Asian cuisines. Click any collapsed card to expand it. Look for green <strong>Available: Mon</strong> chips."
   },
   "filters": {
     "cuisine": {
@@ -77,223 +77,6 @@
   },
   "sections": [
     {
-      "id": "michelin-starred",
-      "label": "Michelin-Starred",
-      "labelClass": "section-label",
-      "restaurants": [
-        {
-          "id": "benu",
-          "name": "Benu",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
-          "mapUrl": "https://maps.google.com/?q=Benu+22+Hawthorne+St+San+Francisco",
-          "image": {
-            "src": "images/benu.jpg",
-            "alt": "Benu"
-          },
-          "description": "Three Michelin stars. Chef Corey Lee's exceptional Asian-Contemporary cuisine. 22 Hawthorne St, SOMA.",
-          "chips": [
-            {
-              "label": "Asian / Contemporary"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.3 (#12)"
-            },
-            {
-              "source": "Google",
-              "value": "4.5 (#13)"
-            }
-          ],
-          "michelin": {
-            "label": "\u2b50\u2b50\u2b50 Three Stars"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/benu",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "ssal",
-          "name": "Ssal",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
-          "mapUrl": "https://maps.google.com/?q=Ssal+2226+Polk+St+San+Francisco",
-          "image": {
-            "src": "images/ssal.jpg",
-            "alt": "Ssal"
-          },
-          "description": "Korean fine dining tasting menu. 2226 Polk St, Russian Hill.",
-          "chips": [
-            {
-              "label": "Korean"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.6 (#3)"
-            },
-            {
-              "source": "Google",
-              "value": "4.7 (#2)"
-            }
-          ],
-          "michelin": {
-            "label": "\u2b50 Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.opentable.com/restaurant/profile/1464916",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "mister-jius",
-          "name": "Mister Jiu's",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
-          "mapUrl": "https://maps.google.com/?q=Mister+Jius+28+Waverly+Pl+San+Francisco",
-          "image": {
-            "src": "images/mister-jius.jpg",
-            "alt": "Mister Jiu's"
-          },
-          "description": "Modern Chinese-American in historic Chinatown. 28 Waverly Pl.",
-          "chips": [
-            {
-              "label": "Chinese"
-            },
-            {
-              "label": "$$$"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "3.7 (#24)"
-            },
-            {
-              "source": "Google",
-              "value": "4.3 (#23)"
-            }
-          ],
-          "michelin": {
-            "label": "\u2b50 Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/misterjius",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "nisei",
-          "name": "Nisei",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
-          "mapUrl": "https://maps.google.com/?q=Nisei+2316+Polk+St+San+Francisco",
-          "image": {
-            "src": "images/nisei.jpg",
-            "alt": "Nisei"
-          },
-          "description": "Japanese-American heritage tasting menu. 2316 Polk St, Russian Hill.",
-          "chips": [
-            {
-              "label": "Japanese"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.5 (#6)"
-            },
-            {
-              "source": "Google",
-              "value": "4.7 (#3)"
-            }
-          ],
-          "michelin": {
-            "label": "\u2b50 Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.opentable.com/r/nisei-san-francisco",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "the-shota",
-          "name": "The Shota",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-shota",
-          "mapUrl": "https://maps.google.com/?q=The+Shota+115+Sansome+St+San+Francisco",
-          "image": {
-            "src": "images/the-shota.jpg",
-            "alt": "The Shota"
-          },
-          "description": "Edomae sushi with kaiseki. Temporarily closed. 115 Sansome St, FiDi.",
-          "chips": [
-            {
-              "label": "Japanese / Sushi"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [],
-          "michelin": {
-            "label": "\u2b50 Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.theshotasf.com/",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "madcap",
-          "name": "Madcap",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
-          "mapUrl": "https://maps.google.com/?q=Madcap+198+Sir+Francis+Drake+Blvd+San+Anselmo",
-          "image": {
-            "src": "images/madcap.jpg",
-            "alt": "Madcap"
-          },
-          "description": "Contemporary Asian fine dining. 198 Sir Francis Drake Blvd, San Anselmo.",
-          "chips": [
-            {
-              "label": "Asian Contemporary"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [],
-          "michelin": {
-            "label": "\u2b50 Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/madcapmarin",
-            "label": "Book"
-          }
-        }
-      ]
-    },
-    {
       "id": "bib-gourmand",
       "label": "Bib Gourmand",
       "labelClass": "section-divider",
@@ -330,7 +113,7 @@
             }
           ],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://www.opentable.com/r/dumpling-home-san-francisco",
@@ -360,7 +143,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "closedMonday": true,
           "booking": {
@@ -400,7 +183,7 @@
             }
           ],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://resy.com/cities/san-francisco-ca/venues/izakaya-rintaro?date=2026-01-19&seats=2",
@@ -430,7 +213,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://www.opentable.com/okane?ref=18490",
@@ -472,7 +255,7 @@
             }
           ],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://www.opentable.com/z-and-y-restaurant?ref=18490",
@@ -502,7 +285,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "closedMonday": true,
           "booking": {
@@ -533,7 +316,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "closedMonday": true,
           "booking": {
@@ -564,7 +347,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/sausalito/restaurant/sushi-ran",
@@ -597,7 +380,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "closedMonday": true,
           "booking": {
@@ -631,7 +414,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/teni-east-kitchen",
@@ -664,7 +447,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/great-china",
@@ -694,7 +477,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/albany/restaurant/china-village",
@@ -724,7 +507,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/ippuku",
@@ -757,7 +540,7 @@
           ],
           "ratings": [],
           "michelin": {
-            "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
+            "label": "🍽️ Bib Gourmand"
           },
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/el-cerrito/restaurant/new-dumpling",
@@ -926,12 +709,12 @@
         },
         {
           "id": "ju-ni",
-          "name": "J\u016b-Ni",
+          "name": "Jū-Ni",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ju-ni",
           "mapUrl": "https://maps.google.com/?q=Ju-Ni+1335+Fulton+St+San+Francisco",
           "image": {
             "src": "images/ju-ni.jpg",
-            "alt": "J\u016b-Ni"
+            "alt": "Jū-Ni"
           },
           "description": "12-seat omakase. 1335 Fulton St, Western Addition.",
           "chips": [
@@ -1658,12 +1441,12 @@
         },
         {
           "id": "chisai-sushi-club",
-          "name": "Ch\u012bsai Sushi Club",
+          "name": "Chīsai Sushi Club",
           "primaryUrl": "https://chisaisushiclub.com/",
           "mapUrl": "https://maps.google.com/?q=Chisai+Sushi+Club+3369+Mission+St+San+Francisco",
           "image": {
             "src": "images/chisai-sushi-club.jpg",
-            "alt": "Ch\u012bsai Sushi Club"
+            "alt": "Chīsai Sushi Club"
           },
           "description": "$95 for 13-course omakase. 3369 Mission St, Bernal Heights.",
           "chips": [
@@ -1728,6 +1511,223 @@
           "booking": {
             "url": "https://www.yelp.com/biz/brothers-korean-bbq-san-francisco",
             "label": "Info"
+          }
+        }
+      ]
+    },
+    {
+      "id": "michelin-starred",
+      "label": "Michelin-Starred",
+      "labelClass": "section-label",
+      "restaurants": [
+        {
+          "id": "benu",
+          "name": "Benu",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+          "mapUrl": "https://maps.google.com/?q=Benu+22+Hawthorne+St+San+Francisco",
+          "image": {
+            "src": "images/benu.jpg",
+            "alt": "Benu"
+          },
+          "description": "Three Michelin stars. Chef Corey Lee's exceptional Asian-Contemporary cuisine. 22 Hawthorne St, SOMA.",
+          "chips": [
+            {
+              "label": "Asian / Contemporary"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.3 (#12)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#13)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐⭐⭐ Three Stars"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/benu",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "ssal",
+          "name": "Ssal",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
+          "mapUrl": "https://maps.google.com/?q=Ssal+2226+Polk+St+San+Francisco",
+          "image": {
+            "src": "images/ssal.jpg",
+            "alt": "Ssal"
+          },
+          "description": "Korean fine dining tasting menu. 2226 Polk St, Russian Hill.",
+          "chips": [
+            {
+              "label": "Korean"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#3)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#2)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.opentable.com/restaurant/profile/1464916",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "mister-jius",
+          "name": "Mister Jiu's",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
+          "mapUrl": "https://maps.google.com/?q=Mister+Jius+28+Waverly+Pl+San+Francisco",
+          "image": {
+            "src": "images/mister-jius.jpg",
+            "alt": "Mister Jiu's"
+          },
+          "description": "Modern Chinese-American in historic Chinatown. 28 Waverly Pl.",
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.7 (#24)"
+            },
+            {
+              "source": "Google",
+              "value": "4.3 (#23)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/misterjius",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "nisei",
+          "name": "Nisei",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
+          "mapUrl": "https://maps.google.com/?q=Nisei+2316+Polk+St+San+Francisco",
+          "image": {
+            "src": "images/nisei.jpg",
+            "alt": "Nisei"
+          },
+          "description": "Japanese-American heritage tasting menu. 2316 Polk St, Russian Hill.",
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#6)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#3)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.opentable.com/r/nisei-san-francisco",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "the-shota",
+          "name": "The Shota",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-shota",
+          "mapUrl": "https://maps.google.com/?q=The+Shota+115+Sansome+St+San+Francisco",
+          "image": {
+            "src": "images/the-shota.jpg",
+            "alt": "The Shota"
+          },
+          "description": "Edomae sushi with kaiseki. Temporarily closed. 115 Sansome St, FiDi.",
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.theshotasf.com/",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "madcap",
+          "name": "Madcap",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
+          "mapUrl": "https://maps.google.com/?q=Madcap+198+Sir+Francis+Drake+Blvd+San+Anselmo",
+          "image": {
+            "src": "images/madcap.jpg",
+            "alt": "Madcap"
+          },
+          "description": "Contemporary Asian fine dining. 198 Sir Francis Drake Blvd, San Anselmo.",
+          "chips": [
+            {
+              "label": "Asian Contemporary"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/madcapmarin",
+            "label": "Book"
           }
         }
       ]
