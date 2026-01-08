@@ -657,6 +657,9 @@
             },
             {
               "label": "Available: Mon & Sun"
+            },
+            {
+              "label": "Call to Reserve"
             }
           ],
           "ratings": [],
@@ -746,7 +749,10 @@
               "label": "$"
             },
             {
-              "label": "Available: Mon & Sun"
+              "label": "Available: Mon"
+            },
+            {
+              "label": "Walk-ins Only"
             }
           ],
           "ratings": [],
@@ -783,7 +789,7 @@
               "label": "$$$$"
             },
             {
-              "label": "Available: Sun"
+              "label": "Available: Mon"
             }
           ],
           "ratings": [
@@ -795,7 +801,6 @@
           "michelin": {
             "label": "Michelin Guide"
           },
-          "closedMonday": true,
           "booking": {
             "url": "https://www.opentable.com/r/niku-steakhouse-san-francisco",
             "label": "Book"
@@ -957,37 +962,6 @@
           }
         },
         {
-          "id": "ken",
-          "name": "Ken",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken",
-          "mapUrl": "https://maps.google.com/?q=Ken+Restaurant+San+Francisco",
-          "image": {
-            "src": "images/ken.jpg",
-            "alt": "Ken"
-          },
-          "description": "Michelin Guide listed sushi restaurant.",
-          "chips": [
-            {
-              "label": "Sushi"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Sun"
-            }
-          ],
-          "ratings": [],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken",
-            "label": "Book"
-          }
-        },
-        {
           "id": "yuji",
           "name": "Yuji",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yuji",
@@ -1035,7 +1009,7 @@
               "label": "$$$$"
             },
             {
-              "label": "Available: Mon & Sun"
+              "label": "Available: Sun"
             }
           ],
           "ratings": [
@@ -1051,47 +1025,9 @@
           "michelin": {
             "label": "Michelin Guide"
           },
+          "closedMonday": true,
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kusakabe",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "robin",
-          "name": "Robin",
-          "primaryUrl": "http://robinomakase.com/",
-          "mapUrl": "https://maps.google.com/?q=Robin+620+Gough+St+San+Francisco",
-          "image": {
-            "src": "images/robin.jpg",
-            "alt": "Robin"
-          },
-          "description": "Omakase sushi. 620 Gough St, Hayes Valley.",
-          "chips": [
-            {
-              "label": "Omakase / Sushi"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.0 (#20)"
-            },
-            {
-              "source": "Google",
-              "value": "4.5 (#16)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "http://robinomakase.com/",
             "label": "Book"
           }
         },
@@ -1174,6 +1110,9 @@
             },
             {
               "label": "Available: Mon & Sun"
+            },
+            {
+              "label": "Walk-ins Only"
             }
           ],
           "ratings": [],
@@ -1281,7 +1220,7 @@
             "label": "Michelin Guide"
           },
           "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/oma-san-francisco-station",
+            "url": "https://app.acuityscheduling.com/schedule/2627d820/appointment/21522698/calendar/any",
             "label": "Book"
           }
         },
@@ -1832,6 +1771,71 @@
           "closedMonday": true,
           "booking": {
             "url": "https://www.exploretock.com/sanhowon",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "ken",
+          "name": "Ken",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken",
+          "mapUrl": "https://maps.google.com/?q=Ken+Restaurant+San+Francisco",
+          "image": {
+            "src": "images/ken.jpg",
+            "alt": "Ken"
+          },
+          "description": "Michelin Guide listed sushi restaurant. Fully booked.",
+          "chips": [
+            {
+              "label": "Sushi"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ken",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "robin",
+          "name": "Robin",
+          "primaryUrl": "http://robinomakase.com/",
+          "mapUrl": "https://maps.google.com/?q=Robin+620+Gough+St+San+Francisco",
+          "image": {
+            "src": "images/robin.jpg",
+            "alt": "Robin"
+          },
+          "description": "Omakase sushi. 620 Gough St, Hayes Valley. Fully booked.",
+          "chips": [
+            {
+              "label": "Omakase / Sushi"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.0 (#20)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#16)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "http://robinomakase.com/",
             "label": "Book"
           }
         }
