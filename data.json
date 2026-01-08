@@ -355,13 +355,14 @@
               "label": "$$"
             },
             {
-              "label": "Available: Mon & Sun"
+              "label": "Available: Sun"
             }
           ],
           "ratings": [],
           "michelin": {
             "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
           },
+          "closedMonday": true,
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/bansang",
             "label": "Book"
@@ -455,6 +456,9 @@
             },
             {
               "label": "Available: Mon & Sun"
+            },
+            {
+              "label": "Call to Reserve"
             }
           ],
           "ratings": [
@@ -493,13 +497,14 @@
               "label": "$$"
             },
             {
-              "label": "Available: Mon & Sun"
+              "label": "Only Available Lunch on Sun"
             }
           ],
           "ratings": [],
           "michelin": {
             "label": "\ud83c\udf7d\ufe0f Bib Gourmand"
           },
+          "closedMonday": true,
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yank-sing",
             "label": "Book"
@@ -517,7 +522,7 @@
           "description": "Bib Gourmand contemporary restaurant. San Leandro.",
           "chips": [
             {
-              "label": "Contemporary"
+              "label": "Contemporary Vietnamese"
             },
             {
               "label": "$$"
@@ -585,6 +590,9 @@
             },
             {
               "label": "Available: Sun"
+            },
+            {
+              "label": "Walk-ins Only"
             }
           ],
           "ratings": [],
@@ -616,6 +624,9 @@
             },
             {
               "label": "Available: Mon & Sun"
+            },
+            {
+              "label": "Walk-ins Only"
             }
           ],
           "ratings": [],

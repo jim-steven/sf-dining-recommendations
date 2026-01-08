@@ -298,10 +298,17 @@
         }
         .restaurant.de-emphasized .chips {
             display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 4px;
         }
         .restaurant.de-emphasized .chips .chip {
             font-size: 9px;
             padding: 2px 8px;
+            opacity: 0.85;
+        }
+        .restaurant.de-emphasized .chips .chip.availability {
+            opacity: 1;
         }
         .restaurant.de-emphasized .restaurant-right {
             display: flex;
