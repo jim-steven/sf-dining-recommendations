@@ -103,45 +103,6 @@
       "labelClass": "section-divider",
       "restaurants": [
         {
-          "id": "dumpling-home",
-          "name": "Dumpling Home",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/dumpling-home",
-          "mapUrl": "https://maps.google.com/?q=Dumpling+Home+379+Hayes+St+San+Francisco",
-          "image": {
-            "src": "images/dumpling-home.jpg",
-            "alt": "Dumpling Home"
-          },
-          "description": "Best xiao long bao in the city. 379 Hayes St, Hayes Valley.",
-          "chips": [
-            {
-              "label": "Chinese / Dumplings"
-            },
-            {
-              "label": "$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.5 (#7)"
-            },
-            {
-              "source": "Google",
-              "value": "4.6 (#8)"
-            }
-          ],
-          "michelin": {
-            "label": "🍽️ Bib Gourmand"
-          },
-          "booking": {
-            "url": "https://www.opentable.com/r/dumpling-home-san-francisco",
-            "label": "Book"
-          }
-        },
-        {
           "id": "rintaro",
           "name": "Izakaya Rintaro",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/izakaya-rintaro",
@@ -178,6 +139,9 @@
           "booking": {
             "url": "https://resy.com/cities/san-francisco-ca/venues/izakaya-rintaro?date=2026-01-19&seats=2",
             "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
           }
         },
         {
@@ -208,6 +172,9 @@
           "booking": {
             "url": "https://www.opentable.com/okane?ref=18490",
             "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
           }
         },
         {
@@ -249,6 +216,48 @@
           },
           "booking": {
             "url": "https://www.opentable.com/z-and-y-restaurant?ref=18490",
+            "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
+          }
+        },
+        {
+          "id": "dumpling-home",
+          "name": "Dumpling Home",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/dumpling-home",
+          "mapUrl": "https://maps.google.com/?q=Dumpling+Home+379+Hayes+St+San+Francisco",
+          "image": {
+            "src": "images/dumpling-home.jpg",
+            "alt": "Dumpling Home"
+          },
+          "description": "Best xiao long bao in the city. 379 Hayes St, Hayes Valley.",
+          "chips": [
+            {
+              "label": "Chinese / Dumplings"
+            },
+            {
+              "label": "$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.5 (#7)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#8)"
+            }
+          ],
+          "michelin": {
+            "label": "🍽️ Bib Gourmand"
+          },
+          "booking": {
+            "url": "https://www.opentable.com/r/dumpling-home-san-francisco",
             "label": "Book"
           }
         },
@@ -576,6 +585,210 @@
       "labelClass": "section-divider",
       "restaurants": [
         {
+          "id": "yuji",
+          "name": "Yuji",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yuji",
+          "mapUrl": "https://maps.google.com/?q=Yuji+San+Francisco",
+          "image": {
+            "src": "images/yuji.jpg",
+            "alt": "Yuji"
+          },
+          "description": "Michelin Guide listed Japanese restaurant.",
+          "chips": [
+            {
+              "label": "Japanese"
+            },
+            {
+              "label": "$$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.exploretock.com/yuji/search?date=2026-01-19&size=2&time=20%3A00",
+            "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
+          }
+        },
+        {
+          "id": "harborview",
+          "name": "Harborview",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
+          "mapUrl": "https://maps.google.com/?q=Harborview+San+Francisco",
+          "image": {
+            "src": "images/harborview.jpg",
+            "alt": "Harborview"
+          },
+          "description": "Michelin Guide listed dim sum.",
+          "chips": [
+            {
+              "label": "Chinese / Dim Sum"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.1 (#17)"
+            },
+            {
+              "source": "Google",
+              "value": "4.3 (#25)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
+            "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
+          }
+        },
+        {
+          "id": "palette-tea-house",
+          "name": "Palette Tea House",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/palette-tea-house",
+          "mapUrl": "https://maps.google.com/?q=Palette+Tea+House+San+Francisco",
+          "image": {
+            "src": "images/palette-tea-house.jpg",
+            "alt": "Palette Tea House"
+          },
+          "description": "Michelin Guide listed dim sum.",
+          "chips": [
+            {
+              "label": "Chinese / Dim Sum"
+            },
+            {
+              "label": "$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.1 (#18)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#19)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.yelp.com/reservations/palette-tea-house-san-francisco-2?date=2026-01-18&time=1900&covers=2",
+            "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
+          }
+        },
+        {
+          "id": "hamano-sushi",
+          "name": "Hamano Sushi",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hamano-sushi",
+          "mapUrl": "https://maps.google.com/?q=Hamano+Sushi+San+Francisco",
+          "image": {
+            "src": "images/hamano-sushi.jpg",
+            "alt": "Hamano Sushi"
+          },
+          "description": "Michelin Guide listed sushi.",
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            },
+            {
+              "label": "Email to Reserve"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.7 (#25)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#20)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://hamanosushi.com/reservationhamanosushicom",
+            "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
+          }
+        },
+        {
+          "id": "pabu-izakaya",
+          "name": "PABU Izakaya",
+          "primaryUrl": "https://www.michaelmina.net/restaurants/pabu-san-francisco/",
+          "mapUrl": "https://maps.google.com/?q=PABU+Izakaya+San+Francisco",
+          "image": {
+            "src": "images/pabu-izakaya.jpg",
+            "alt": "PABU Izakaya"
+          },
+          "description": "Michael Mina's Japanese izakaya.",
+          "chips": [
+            {
+              "label": "Japanese / Izakaya"
+            },
+            {
+              "label": "$$$"
+            },
+            {
+              "label": "Available: Mon & Sun"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.1 (#19)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#21)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "booking": {
+            "url": "https://www.google.com/maps/reserve/dine?c=CaBbs0zvnj8&ssst=2026-01-20T02%3A30%3A00.000Z&ld=20260119T183000&ps=2&gei=UrFeaeCuMIOf4-EP0vDm8AU&hl=en-US&opi=89978449&source=pa",
+            "label": "Book"
+          },
+          "recommendedBadge": {
+            "label": "Recommended"
+          }
+        },
+        {
           "id": "niku-steakhouse",
           "name": "Niku Steakhouse",
           "primaryUrl": "https://www.nikusteakhouse.com/",
@@ -685,36 +898,6 @@
           },
           "booking": {
             "url": "https://resy.com/cities/san-francisco-ca/venues/kin-khao?date=2026-01-19&seats=2",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "yuji",
-          "name": "Yuji",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/yuji",
-          "mapUrl": "https://maps.google.com/?q=Yuji+San+Francisco",
-          "image": {
-            "src": "images/yuji.jpg",
-            "alt": "Yuji"
-          },
-          "description": "Michelin Guide listed Japanese restaurant.",
-          "chips": [
-            {
-              "label": "Japanese"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://www.exploretock.com/yuji/search?date=2026-01-19&size=2&time=20%3A00",
             "label": "Book"
           }
         },
@@ -920,21 +1103,21 @@
           }
         },
         {
-          "id": "harborview",
-          "name": "Harborview",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
-          "mapUrl": "https://maps.google.com/?q=Harborview+San+Francisco",
+          "id": "akikos",
+          "name": "Akiko's",
+          "primaryUrl": "https://www.akikosrestaurant.com/",
+          "mapUrl": "https://maps.google.com/?q=Akikos+Restaurant+San+Francisco",
           "image": {
-            "src": "images/harborview.jpg",
-            "alt": "Harborview"
+            "src": "images/akikos.jpg",
+            "alt": "Akiko's"
           },
-          "description": "Michelin Guide listed dim sum.",
+          "description": "Premium omakase sushi experience.",
           "chips": [
             {
-              "label": "Chinese / Dim Sum"
+              "label": "Japanese / Sushi"
             },
             {
-              "label": "$$"
+              "label": "$$$$"
             },
             {
               "label": "Available: Mon & Sun"
@@ -943,37 +1126,37 @@
           "ratings": [
             {
               "source": "Yelp",
-              "value": "4.1 (#17)"
+              "value": "3.7 (#26)"
             },
             {
               "source": "Google",
-              "value": "4.3 (#25)"
+              "value": "4.5 (#17)"
             }
           ],
           "michelin": {
             "label": "Michelin Guide"
           },
           "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
+            "url": "https://www.opentable.com/booking/restref/availability?rid=51061&lang=en-US&color=1&r3uid=cfe&dark=true&correlationId=f32c0ae2-3b7b-490c-ad3d-67f334f020e4&restRef=51061&partySize=2&dateTime=2026-01-19T19%3A00&otSource=Restaurant%20website",
             "label": "Book"
           }
         },
         {
-          "id": "palette-tea-house",
-          "name": "Palette Tea House",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/palette-tea-house",
-          "mapUrl": "https://maps.google.com/?q=Palette+Tea+House+San+Francisco",
+          "id": "ozumo",
+          "name": "Ozumo",
+          "primaryUrl": "https://www.ozumo.com/san-francisco/",
+          "mapUrl": "https://maps.google.com/?q=Ozumo+161+Steuart+St+San+Francisco",
           "image": {
-            "src": "images/palette-tea-house.jpg",
-            "alt": "Palette Tea House"
+            "src": "images/ozumo.jpg",
+            "alt": "Ozumo"
           },
-          "description": "Michelin Guide listed dim sum.",
+          "description": "Japanese robata and sushi. 161 Steuart St, Embarcadero.",
           "chips": [
             {
-              "label": "Chinese / Dim Sum"
+              "label": "Japanese / Robata"
             },
             {
-              "label": "$$"
+              "label": "$$$"
             },
             {
               "label": "Available: Mon & Sun"
@@ -982,18 +1165,18 @@
           "ratings": [
             {
               "source": "Yelp",
-              "value": "4.1 (#18)"
+              "value": "4.0 (#21)"
             },
             {
               "source": "Google",
-              "value": "4.4 (#19)"
+              "value": "4.4 (#22)"
             }
           ],
           "michelin": {
             "label": "Michelin Guide"
           },
           "booking": {
-            "url": "https://www.yelp.com/reservations/palette-tea-house-san-francisco-2?date=2026-01-18&time=1900&covers=2",
+            "url": "https://www.opentable.com/r/ozumo-san-francisco",
             "label": "Book"
           }
         },
@@ -1038,165 +1221,6 @@
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saru",
             "label": "Info"
-          }
-        },
-        {
-          "id": "hamano-sushi",
-          "name": "Hamano Sushi",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hamano-sushi",
-          "mapUrl": "https://maps.google.com/?q=Hamano+Sushi+San+Francisco",
-          "image": {
-            "src": "images/hamano-sushi.jpg",
-            "alt": "Hamano Sushi"
-          },
-          "description": "Michelin Guide listed sushi.",
-          "chips": [
-            {
-              "label": "Japanese / Sushi"
-            },
-            {
-              "label": "$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            },
-            {
-              "label": "Email to Reserve"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "3.7 (#25)"
-            },
-            {
-              "source": "Google",
-              "value": "4.4 (#20)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://hamanosushi.com/reservationhamanosushicom",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "akikos",
-          "name": "Akiko's",
-          "primaryUrl": "https://www.akikosrestaurant.com/",
-          "mapUrl": "https://maps.google.com/?q=Akikos+Restaurant+San+Francisco",
-          "image": {
-            "src": "images/akikos.jpg",
-            "alt": "Akiko's"
-          },
-          "description": "Premium omakase sushi experience.",
-          "chips": [
-            {
-              "label": "Japanese / Sushi"
-            },
-            {
-              "label": "$$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "3.7 (#26)"
-            },
-            {
-              "source": "Google",
-              "value": "4.5 (#17)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://www.opentable.com/booking/restref/availability?rid=51061&lang=en-US&color=1&r3uid=cfe&dark=true&correlationId=f32c0ae2-3b7b-490c-ad3d-67f334f020e4&restRef=51061&partySize=2&dateTime=2026-01-19T19%3A00&otSource=Restaurant%20website",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "pabu-izakaya",
-          "name": "PABU Izakaya",
-          "primaryUrl": "https://www.michaelmina.net/restaurants/pabu-san-francisco/",
-          "mapUrl": "https://maps.google.com/?q=PABU+Izakaya+San+Francisco",
-          "image": {
-            "src": "images/pabu-izakaya.jpg",
-            "alt": "PABU Izakaya"
-          },
-          "description": "Michael Mina's Japanese izakaya.",
-          "chips": [
-            {
-              "label": "Japanese / Izakaya"
-            },
-            {
-              "label": "$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.1 (#19)"
-            },
-            {
-              "source": "Google",
-              "value": "4.4 (#21)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://www.google.com/maps/reserve/dine?c=CaBbs0zvnj8&ssst=2026-01-20T02%3A30%3A00.000Z&ld=20260119T183000&ps=2&gei=UrFeaeCuMIOf4-EP0vDm8AU&hl=en-US&opi=89978449&source=pa",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "ozumo",
-          "name": "Ozumo",
-          "primaryUrl": "https://www.ozumo.com/san-francisco/",
-          "mapUrl": "https://maps.google.com/?q=Ozumo+161+Steuart+St+San+Francisco",
-          "image": {
-            "src": "images/ozumo.jpg",
-            "alt": "Ozumo"
-          },
-          "description": "Japanese robata and sushi. 161 Steuart St, Embarcadero.",
-          "chips": [
-            {
-              "label": "Japanese / Robata"
-            },
-            {
-              "label": "$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.0 (#21)"
-            },
-            {
-              "source": "Google",
-              "value": "4.4 (#22)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://www.opentable.com/r/ozumo-san-francisco",
-            "label": "Book"
           }
         },
         {
