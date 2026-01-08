@@ -1015,7 +1015,10 @@
               "label": "$$$"
             },
             {
-              "label": "Available: Mon & Sun"
+              "label": "Available: Sun"
+            },
+            {
+              "label": "No Reservations"
             }
           ],
           "ratings": [
@@ -1031,9 +1034,10 @@
           "michelin": {
             "label": "Michelin Guide"
           },
+          "closedMonday": true,
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saru",
-            "label": "Book"
+            "label": "Info"
           }
         },
         {
@@ -1236,43 +1240,6 @@
           }
         },
         {
-          "id": "ju-ni",
-          "name": "Jū-Ni",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ju-ni",
-          "mapUrl": "https://maps.google.com/?q=Ju-Ni+1335+Fulton+St+San+Francisco",
-          "image": {
-            "src": "images/ju-ni.jpg",
-            "alt": "Jū-Ni"
-          },
-          "description": "12-seat omakase. 1335 Fulton St, Western Addition.",
-          "chips": [
-            {
-              "label": "Omakase / Sushi"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.6 (#4)"
-            },
-            {
-              "source": "Google",
-              "value": "4.7 (#4)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/juni",
-            "label": "Book"
-          }
-        },
-        {
           "id": "kusakabe",
           "name": "Kusakabe",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kusakabe",
@@ -1467,43 +1434,6 @@
       "labelClass": "section-label",
       "restaurants": [
         {
-          "id": "benu",
-          "name": "Benu",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
-          "mapUrl": "https://maps.google.com/?q=Benu+22+Hawthorne+St+San+Francisco",
-          "image": {
-            "src": "images/benu.jpg",
-            "alt": "Benu"
-          },
-          "description": "Three Michelin stars. Chef Corey Lee's exceptional Asian-Contemporary cuisine. 22 Hawthorne St, SOMA.",
-          "chips": [
-            {
-              "label": "Asian / Contemporary"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.3 (#12)"
-            },
-            {
-              "source": "Google",
-              "value": "4.5 (#13)"
-            }
-          ],
-          "michelin": {
-            "label": "⭐⭐⭐ Three Stars"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/benu",
-            "label": "Book"
-          }
-        },
-        {
           "id": "ssal",
           "name": "Ssal",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
@@ -1544,43 +1474,6 @@
           }
         },
         {
-          "id": "mister-jius",
-          "name": "Mister Jiu's",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
-          "mapUrl": "https://maps.google.com/?q=Mister+Jius+28+Waverly+Pl+San+Francisco",
-          "image": {
-            "src": "images/mister-jius.jpg",
-            "alt": "Mister Jiu's"
-          },
-          "description": "Modern Chinese-American in historic Chinatown. 28 Waverly Pl.",
-          "chips": [
-            {
-              "label": "Chinese"
-            },
-            {
-              "label": "$$$"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "3.7 (#24)"
-            },
-            {
-              "source": "Google",
-              "value": "4.3 (#23)"
-            }
-          ],
-          "michelin": {
-            "label": "⭐ Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/misterjius",
-            "label": "Book"
-          }
-        },
-        {
           "id": "nisei",
           "name": "Nisei",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
@@ -1617,62 +1510,6 @@
           "closedMonday": true,
           "booking": {
             "url": "https://www.opentable.com/r/nisei-san-francisco",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "the-shota",
-          "name": "The Shota",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-shota",
-          "mapUrl": "https://maps.google.com/?q=The+Shota+115+Sansome+St+San+Francisco",
-          "image": {
-            "src": "images/the-shota.jpg",
-            "alt": "The Shota"
-          },
-          "description": "Edomae sushi with kaiseki. Temporarily closed. 115 Sansome St, FiDi.",
-          "chips": [
-            {
-              "label": "Japanese / Sushi"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [],
-          "michelin": {
-            "label": "⭐ Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.theshotasf.com/",
-            "label": "Book"
-          }
-        },
-        {
-          "id": "madcap",
-          "name": "Madcap",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
-          "mapUrl": "https://maps.google.com/?q=Madcap+198+Sir+Francis+Drake+Blvd+San+Anselmo",
-          "image": {
-            "src": "images/madcap.jpg",
-            "alt": "Madcap"
-          },
-          "description": "Contemporary Asian fine dining. 198 Sir Francis Drake Blvd, San Anselmo.",
-          "chips": [
-            {
-              "label": "Asian Contemporary"
-            },
-            {
-              "label": "$$$$"
-            }
-          ],
-          "ratings": [],
-          "michelin": {
-            "label": "⭐ Michelin Star"
-          },
-          "closedMonday": true,
-          "booking": {
-            "url": "https://www.exploretock.com/madcapmarin",
             "label": "Book"
           }
         }
@@ -1856,6 +1693,173 @@
           "closedMonday": true,
           "booking": {
             "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/noodle-in-a-haystack",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "ju-ni",
+          "name": "Jū-Ni",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ju-ni",
+          "mapUrl": "https://maps.google.com/?q=Ju-Ni+1335+Fulton+St+San+Francisco",
+          "image": {
+            "src": "images/ju-ni.jpg",
+            "alt": "Jū-Ni"
+          },
+          "description": "12-seat omakase. 1335 Fulton St, Western Addition. Fully booked.",
+          "chips": [
+            {
+              "label": "Omakase / Sushi"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#4)"
+            },
+            {
+              "source": "Google",
+              "value": "4.7 (#4)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/juni",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "benu",
+          "name": "Benu",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+          "mapUrl": "https://maps.google.com/?q=Benu+22+Hawthorne+St+San+Francisco",
+          "image": {
+            "src": "images/benu.jpg",
+            "alt": "Benu"
+          },
+          "description": "Three Michelin stars. Chef Corey Lee's exceptional Asian-Contemporary cuisine. Fully booked.",
+          "chips": [
+            {
+              "label": "Asian / Contemporary"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.3 (#12)"
+            },
+            {
+              "source": "Google",
+              "value": "4.5 (#13)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐⭐⭐ Three Stars"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/benu",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "mister-jius",
+          "name": "Mister Jiu's",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
+          "mapUrl": "https://maps.google.com/?q=Mister+Jius+28+Waverly+Pl+San+Francisco",
+          "image": {
+            "src": "images/mister-jius.jpg",
+            "alt": "Mister Jiu's"
+          },
+          "description": "Modern Chinese-American in historic Chinatown. Fully booked.",
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "3.7 (#24)"
+            },
+            {
+              "source": "Google",
+              "value": "4.3 (#23)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/misterjius",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "the-shota",
+          "name": "The Shota",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-shota",
+          "mapUrl": "https://maps.google.com/?q=The+Shota+115+Sansome+St+San+Francisco",
+          "image": {
+            "src": "images/the-shota.jpg",
+            "alt": "The Shota"
+          },
+          "description": "Edomae sushi with kaiseki. Temporarily closed.",
+          "chips": [
+            {
+              "label": "Japanese / Sushi"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.theshotasf.com/",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "madcap",
+          "name": "Madcap",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
+          "mapUrl": "https://maps.google.com/?q=Madcap+198+Sir+Francis+Drake+Blvd+San+Anselmo",
+          "image": {
+            "src": "images/madcap.jpg",
+            "alt": "Madcap"
+          },
+          "description": "Contemporary Asian fine dining. Fully booked.",
+          "chips": [
+            {
+              "label": "Asian Contemporary"
+            },
+            {
+              "label": "$$$$"
+            }
+          ],
+          "ratings": [],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/madcapmarin",
             "label": "Book"
           }
         }
