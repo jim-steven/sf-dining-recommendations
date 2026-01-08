@@ -73,6 +73,27 @@
           "label": "Highly Acclaimed"
         }
       ]
+    },
+    "availability": {
+      "label": "Availability",
+      "options": [
+        {
+          "value": "",
+          "label": "All"
+        },
+        {
+          "value": "mon",
+          "label": "Monday"
+        },
+        {
+          "value": "sun",
+          "label": "Sunday"
+        },
+        {
+          "value": "walk-ins",
+          "label": "Walk-ins Only"
+        }
+      ]
     }
   },
   "sections": [

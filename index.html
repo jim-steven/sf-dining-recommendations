@@ -426,6 +426,10 @@
                     <label for="acclamation-filter" id="acclamation-filter-label">Acclamation</label>
                     <select id="acclamation-filter"></select>
                 </div>
+                <div class="filter-group">
+                    <label for="availability-filter" id="availability-filter-label">Availability</label>
+                    <select id="availability-filter"></select>
+                </div>
                 <div class="filter-actions">
                     <button class="reset-btn" onclick="resetFilters()">Reset</button>
                 </div>
@@ -527,6 +531,21 @@
                         option.value = opt.value;
                         option.textContent = opt.label;
                         acclamationSelect.appendChild(option);
+                    });
+                }
+            }
+
+            const availabilitySelect = document.getElementById('availability-filter');
+            const availabilityLabel = document.getElementById('availability-filter-label');
+            if (filters.availability) {
+                if (availabilityLabel) availabilityLabel.textContent = filters.availability.label;
+                if (availabilitySelect) {
+                    availabilitySelect.innerHTML = '';
+                    filters.availability.options.forEach(opt => {
+                        const option = document.createElement('option');
+                        option.value = opt.value;
+                        option.textContent = opt.label;
+                        availabilitySelect.appendChild(option);
                     });
                 }
             }
@@ -687,10 +706,12 @@
         function applyFilters() {
             const cuisineFilter = document.getElementById('cuisine-filter');
             const acclamationFilter = document.getElementById('acclamation-filter');
+            const availabilityFilter = document.getElementById('availability-filter');
             const resultCount = document.getElementById('result-count');
 
             const cuisine = cuisineFilter.value.toLowerCase();
             const acclamation = acclamationFilter.value.toLowerCase();
+            const availability = availabilityFilter.value.toLowerCase();
             let visible = 0;
 
             allRestaurants.forEach(restaurant => {
@@ -699,6 +720,7 @@
                 
                 let showCuisine = !cuisine || chips.includes(cuisine);
                 let showAcclamation = !acclamation;
+                let showAvailability = !availability;
                 
                 if (acclamation === 'michelin-star') {
                     showAcclamation = michelin.includes('michelin star');
@@ -710,9 +732,19 @@
                     showAcclamation = michelin.includes('james beard');
                 } else if (acclamation === 'notable') {
                     showAcclamation = michelin.includes('notable');
+                } else if (acclamation === 'bib-gourmand') {
+                    showAcclamation = michelin.includes('bib gourmand');
                 }
 
-                if (showCuisine && showAcclamation) {
+                if (availability === 'mon') {
+                    showAvailability = chips.includes('available: mon');
+                } else if (availability === 'sun') {
+                    showAvailability = chips.includes('available: sun') || chips.includes('available: mon & sun');
+                } else if (availability === 'walk-ins') {
+                    showAvailability = chips.includes('walk-ins only');
+                }
+
+                if (showCuisine && showAcclamation && showAvailability) {
                     restaurant.classList.remove('hidden');
                     visible++;
                 } else {
@@ -726,11 +758,13 @@
         function resetFilters() {
             document.getElementById('cuisine-filter').value = '';
             document.getElementById('acclamation-filter').value = '';
+            document.getElementById('availability-filter').value = '';
             applyFilters();
         }
 
         document.getElementById('cuisine-filter').addEventListener('change', applyFilters);
         document.getElementById('acclamation-filter').addEventListener('change', applyFilters);
+        document.getElementById('availability-filter').addEventListener('change', applyFilters);
 
         loadData()
             .then(renderPage)
