@@ -119,45 +119,6 @@
           }
         },
         {
-          "id": "san-ho-won",
-          "name": "San Ho Won",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won",
-          "mapUrl": "https://maps.google.com/?q=San+Ho+Won+2170+Bryant+St+San+Francisco",
-          "image": {
-            "src": "images/san-ho-won.jpg",
-            "alt": "San Ho Won"
-          },
-          "description": "Charcoal BBQ with premium Korean cuts. Open Mon & Sun 5-9:30 PM. 2170 Bryant St, Mission.",
-          "chips": [
-            {
-              "label": "Korean BBQ"
-            },
-            {
-              "label": "$$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.6 (#2)"
-            },
-            {
-              "source": "Google",
-              "value": "4.6 (#7)"
-            }
-          ],
-          "michelin": {
-            "label": "\u2b50 Michelin Star"
-          },
-          "booking": {
-            "url": "https://www.exploretock.com/sanhowon",
-            "label": "Book"
-          }
-        },
-        {
           "id": "ssal",
           "name": "Ssal",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
@@ -193,7 +154,7 @@
           },
           "closedMonday": true,
           "booking": {
-            "url": "https://www.opentable.com/r/ssal-san-francisco",
+            "url": "https://www.opentable.com/restaurant/profile/1464916",
             "label": "Book"
           }
         },
@@ -1817,6 +1778,50 @@
           "booking": {
             "url": "https://www.yelp.com/biz/brothers-korean-bbq-san-francisco",
             "label": "Info"
+          }
+        }
+      ]
+    },
+    {
+      "id": "checked-not-available",
+      "label": "Checked but not available",
+      "labelClass": "section-divider",
+      "restaurants": [
+        {
+          "id": "san-ho-won",
+          "name": "San Ho Won",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won",
+          "mapUrl": "https://maps.google.com/?q=San+Ho+Won+2170+Bryant+St+San+Francisco",
+          "image": {
+            "src": "images/san-ho-won.jpg",
+            "alt": "San Ho Won"
+          },
+          "description": "Charcoal BBQ with premium Korean cuts. Open Mon & Sun 5-9:30 PM. 2170 Bryant St, Mission. Fully booked.",
+          "chips": [
+            {
+              "label": "Korean BBQ"
+            },
+            {
+              "label": "$$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.6 (#2)"
+            },
+            {
+              "source": "Google",
+              "value": "4.6 (#7)"
+            }
+          ],
+          "michelin": {
+            "label": "⭐ Michelin Star"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://www.exploretock.com/sanhowon",
+            "label": "Book"
           }
         }
       ]
