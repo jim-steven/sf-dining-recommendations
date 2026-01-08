@@ -899,45 +899,6 @@
           }
         },
         {
-          "id": "four-kings",
-          "name": "Four Kings",
-          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
-          "mapUrl": "https://maps.google.com/?q=Four+Kings+San+Francisco",
-          "image": {
-            "src": "images/four-kings.jpg",
-            "alt": "Four Kings"
-          },
-          "description": "Michelin Guide listed Chinese.",
-          "chips": [
-            {
-              "label": "Chinese"
-            },
-            {
-              "label": "$$"
-            },
-            {
-              "label": "Available: Mon & Sun"
-            }
-          ],
-          "ratings": [
-            {
-              "source": "Yelp",
-              "value": "4.2 (#16)"
-            },
-            {
-              "source": "Google",
-              "value": "4.4 (#18)"
-            }
-          ],
-          "michelin": {
-            "label": "Michelin Guide"
-          },
-          "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
-            "label": "Book"
-          }
-        },
-        {
           "id": "harborview",
           "name": "Harborview",
           "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/harborview",
@@ -1011,7 +972,7 @@
             "label": "Michelin Guide"
           },
           "booking": {
-            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/palette-tea-house",
+            "url": "https://www.yelp.com/reservations/palette-tea-house-san-francisco-2?date=2026-01-18&time=1900&covers=2",
             "label": "Book"
           }
         },
@@ -1836,6 +1797,43 @@
           "closedMonday": true,
           "booking": {
             "url": "http://robinomakase.com/",
+            "label": "Book"
+          }
+        },
+        {
+          "id": "four-kings",
+          "name": "Four Kings",
+          "primaryUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
+          "mapUrl": "https://maps.google.com/?q=Four+Kings+San+Francisco",
+          "image": {
+            "src": "images/four-kings.jpg",
+            "alt": "Four Kings"
+          },
+          "description": "Michelin Guide listed Chinese. Fully booked.",
+          "chips": [
+            {
+              "label": "Chinese"
+            },
+            {
+              "label": "$$"
+            }
+          ],
+          "ratings": [
+            {
+              "source": "Yelp",
+              "value": "4.2 (#16)"
+            },
+            {
+              "source": "Google",
+              "value": "4.4 (#18)"
+            }
+          ],
+          "michelin": {
+            "label": "Michelin Guide"
+          },
+          "closedMonday": true,
+          "booking": {
+            "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/four-kings",
             "label": "Book"
           }
         }
